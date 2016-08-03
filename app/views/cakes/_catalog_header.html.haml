@@ -1,0 +1,20 @@
+%h2= @title
+%hr.sep
+.col-sm-3
+  %span.btn-block= link_to "Tortas Decoradas", cakes_url(menu: "decoradas")
+.col-sm-3
+  %span.btn-block= link_to "Tortas de Novios", cakes_url(menu: "novios")
+.col-sm-3
+  %span.btn-block= link_to "Tortas Tradicionales", cakes_url(menu: "tradicionales")
+.col-sm-3
+  %span.btn-block= link_to "Cupcakes", cakes_url(menu: "cupcakes")
+.clearfix
+.col-xs-12.col-sm-10.col-sm-offset-1
+  = form_tag(search_path, :method => "get", id: "search-form") do
+    #search_field
+      = text_field_tag :search, nil, placeholder: "Buscar productos"
+    #category_field
+      = select_tag :category, options_for_select([['Todos', 'all'], ['Tortas Decoradas', 'decoradas'], ['Tortas de Novios', 'novios'], ['Tortas Tradicionales', 'tradicionales'], ['Cupcakes', 'cupcakes']]), :label => false, include_blank: false, class: "select"
+    #submit_button
+      = submit_tag "Buscar", id: "search-button"
+.clearfix

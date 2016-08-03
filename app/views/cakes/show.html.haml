@@ -1,0 +1,17 @@
+.cake.col-xs-12.col-sm-6.col-md-4.col-lg-3
+  = image_tag(@cake.image.url(:large))
+  .cake_info
+    %h5= @cake.name
+    %h6= "Código: " + @cake.code
+    -if @cake.description
+      %h6= @cake.description
+    - if @cake.includes_couple
+      %p Incluye pareja de novios
+    - if @cake.minimum_portions > 0
+      %p Porciones mínimas: #{@cake.minimum_portions}
+      %p Precio por porción: $#{@cake.portion_price}
+    - else
+      - @cake.prices.each do |p|
+        %p #{p.portions} personas: $#{p.price}
+    - if @cake.warranty > 0
+      %p Garantía: $#{@cake.warranty}

@@ -1,0 +1,13 @@
+.text-center
+  = render 'catalog_header'
+  %h3 ¡Las más populares!
+  %hr.thin-sep
+  - @most_popular.each_with_index do |c, index|
+    = render partial: 'item', locals: {c: c, index: index}
+  .clearfix
+  %h3 ¡Nuevas Tortas!
+  %hr.thin-sep
+  - @newest.each_with_index do |c, index|
+    = render partial: 'item', locals: {c: c, index: index}
+  = render "layouts/modal"
+  .clearfix

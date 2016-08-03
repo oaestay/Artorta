@@ -1,0 +1,19 @@
+.cake-modal.col-xs-12.col-sm-10.col-sm-offset-1.col-md-6.col-md-offset-3
+  %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"}
+    =fa_icon "times", class: "fa-2x"
+  .clearfix
+  = image_tag(@cake.image.url(:medium))
+  %h5= @cake.name
+  %h6= @cake.code
+  - if @cake.description
+    %h6= @cake.description
+  - if @cake.includes_couple
+    %p Incluye pareja de novios
+  - if @cake.minimum_portions > 0
+    %p Porciones mínimas: #{@cake.minimum_portions}
+    %p Precio por porción: $#{@cake.portion_price}
+  - else
+    - @cake.prices.each do |p|
+      %p #{p.portions} personas: $#{p.price}
+  - if @cake.warranty > 0
+    %p Garantía: $#{@cake.warranty}

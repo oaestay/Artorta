@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cake_id: 
+  portions: 1
+  price: 1
+
+two:
+  cake_id: 
+  portions: 1
+  price: 1
