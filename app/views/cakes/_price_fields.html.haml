@@ -1,4 +1,4 @@
-.nested-fields.form-inline
+.col-xs-12.col-sm-6.nested-fields.form-inline
   = f.input :portions
   = f.input :price
-  = link_to_remove_association "Eliminar precio", f
+  = link_to_remove_association((fa_icon "times", text: ""), f)

@@ -299,6 +299,10 @@ Form
   background: image-url("dropdown_arrow.png") no-repeat right center;
 }
 
+.form-group textarea{
+  height: 100px;
+  resize: none;
+}
 .nested-fields{
   margin: 15px 0;
 }

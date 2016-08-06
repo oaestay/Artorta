@@ -34,7 +34,9 @@ class CakesController < ApplicationController
     else
       redirect_to catalog_url
     end
-    @cakes = @cakes.paginate(page: params[:page], per_page: 24)
+    unless @cakes.nil?
+      @cakes = @cakes.paginate(page: params[:page], per_page: 24)
+    end
   end
 
   def search
