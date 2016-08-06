@@ -58,6 +58,10 @@ class CakesController < ApplicationController
     @cakes = @cakes.paginate(:page => params[:page], :per_page => 24)
   end
 
+  def cakes_tagged_with
+    
+  end
+
   def show
     @cake.popularity += 1
     @cake.save
