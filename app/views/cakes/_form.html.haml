@@ -11,7 +11,7 @@
       = f.input :portion_price, label: "Precio por porción", hint: "Dejar en 0 sino aplica"
       = f.input :includes_couple, label: "Incluye novios", hint: "Dejar desmarcado sino aplica"
       = f.input :warranty, label: "Garantía", hint: "Dejar en 0 sino aplica"
-      = f.input :description, as: :textarea, label: "Descripción adicional"
+      = f.input :description, label: "Descripción adicional"
       = f.input :popularity, label: "Popularidad"
     #prices.col-xs-12.col-sm-12
       = f.simple_fields_for :prices do |price|
