@@ -11,17 +11,13 @@
 // about supported directives.
 //
 //= require jquery
-//= require fancybox
 //= require jquery_ujs
-//= require_tree .
-//= require bootstrap
+//= require bootstrap.min
 //= require cocoon
-//= require owl.carousel
+//= require owl.carousel.min
 //= require select2-full
 
 $(document).ready(function() {
-
-    $("a.fancybox").fancybox();
 
     /***************** Navbar-Collapse ******************/
 

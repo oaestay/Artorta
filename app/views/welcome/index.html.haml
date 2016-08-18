@@ -1,3 +1,24 @@
+:javascript
+  function cycleImages(){
+  var images = $('#carrousel span'),
+  now    = images.filter(':visible'),
+  next   = now.next().length ? now.next() : images.first(),
+  speed  = 1500;
+
+  now.fadeOut(speed);
+  next.fadeIn(speed);
+  }
+
+  $(function() {
+  setInterval(cycleImages, 4000);
+  var carrousel = $('#carrousel');
+  var info = $("#welcome_info");
+  var image = $('#carrousel span').filter(':visible');
+  carrousel.height(Math.max(image.height(), info.height()));
+  var window = $(window).on('resize', function(){
+      carrousel.height(Math.max(image.height(), info.height()));
+    }).trigger('resize');
+  });
 #owl-hero.owl-carousel.owl-theme
   .item
     = image_tag('slider_0.jpg')
@@ -8,33 +29,25 @@
   .item
     = image_tag('slider_3.jpg')
 .clearfix
-.col-xs-12.col-sm-10.col-sm-offset-1
+.col-sm-3.col-sm-offset-1.hidden-xs
+  #carrousel
+    %span.active
+      = image_tag("carrousel_0.png")
+    %span
+      = image_tag("carrousel_1.png")
+    %span
+      = image_tag("carrousel_2.png")
+    %span
+      = image_tag("carrousel_3.png")
+    %span
+      = image_tag("carrousel_4.png")
+    %span
+      = image_tag("carrousel_5.png")
+#welcome_info.col-xs-12.col-sm-7
   %p
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor diam, hendrerit non turpis id, malesuada malesuada neque. Integer vulputate elit sit amet odio luctus, feugiat porta lectus pellentesque. Curabitur lacinia porttitor lorem sed egestas. Suspendisse potenti. Integer pretium odio risus, at bibendum leo feugiat facilisis. Etiam varius ligula eget neque consequat, et efficitur ante placerat. Vivamus metus metus, vehicula at suscipit eu, luctus vel neque. Suspendisse tortor mi, commodo in purus vitae, maximus efficitur neque. Aenean vehicula dui turpis, posuere consequat odio varius quis.
 
   %p
     Donec gravida lectus ut rhoncus sollicitudin. Integer nec mollis nunc, vitae pulvinar turpis. Phasellus congue sed turpis ac ullamcorper. Aliquam viverra sapien accumsan, porttitor lorem at, tincidunt purus. Fusce vestibulum libero sit amet lectus bibendum fringilla. Aenean rutrum lacus et leo accumsan rutrum. Vivamus sit amet leo egestas, euismod nisl suscipit, elementum elit. In semper non erat quis convallis. Suspendisse imperdiet id tellus ut consequat. Vestibulum a tincidunt augue.
-
-  %p
-    Nulla a felis et purus pharetra pellentesque. Mauris lacinia nisl sed nisl vulputate vehicula. Nam vestibulum sem sit amet varius semper. Sed in mauris non augue euismod pharetra. In ut dolor convallis tortor feugiat consequat. Fusce nisi augue, laoreet tincidunt eleifend vitae, tincidunt pharetra leo. Aenean malesuada erat vitae scelerisque tristique. Mauris congue non felis vel faucibus. Cras vel leo sapien. Cras faucibus, est nec mattis venenatis, ex nibh ultrices eros, placerat auctor est mi iaculis sapien. Duis feugiat eleifend posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
-  %p
-    Nam molestie augue et neque molestie congue. Mauris ultrices est id enim lobortis, quis elementum orci pretium. Morbi bibendum semper metus, a vulputate mi hendrerit a. Nunc facilisis urna arcu, quis lobortis metus faucibus rutrum. Integer a feugiat sem, eu rhoncus purus. Nunc lorem tortor, ultrices quis turpis nec, bibendum aliquam dolor. Etiam tempor fringilla diam a lobortis. Sed dictum tortor lectus, eget iaculis sem cursus nec. Duis egestas libero sit amet velit vehicula, eu lobortis sem bibendum. Vivamus sit amet hendrerit ipsum, sed efficitur orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque bibendum felis sed posuere condimentum. Curabitur ac ante at tortor consectetur interdum sit amet ut tellus.
-
-  %p
-    Aenean cursus turpis auctor libero aliquam tristique. Ut eget odio scelerisque, maximus felis egestas, commodo tortor. Aliquam erat volutpat. In hendrerit purus non congue pulvinar. Morbi ex lorem, pellentesque vel nibh vel, venenatis rhoncus lorem. Aenean hendrerit varius leo. Donec laoreet est nec nulla auctor blandit non in tortor. Cras non aliquet quam.
-
-  %p
-    Suspendisse rhoncus nisi ac nunc scelerisque tristique. Ut molestie odio semper erat fermentum consectetur. Nulla non nibh erat. Aenean rutrum, ante ac volutpat viverra, dolor orci consectetur nunc, sit amet ultrices purus est id erat. Duis feugiat dictum nulla, eu varius enim. Nullam consequat ac velit vel scelerisque. Etiam congue scelerisque interdum. Fusce nec odio turpis.
-
-  %p
-    Donec vitae vestibulum dolor, eu interdum leo. Mauris sed turpis eu dui aliquam commodo id eget nibh. Sed quam justo, molestie vitae nisi id, porta sodales neque. Vestibulum pharetra lectus a neque dignissim, id efficitur nibh egestas. Curabitur ut semper est. Morbi accumsan eros ante, quis iaculis tortor tincidunt ut. Proin interdum risus vel ipsum euismod, ac vehicula massa commodo. Etiam malesuada pulvinar quam id fringilla. Vestibulum id finibus sem. Curabitur suscipit aliquet erat, vitae rhoncus quam posuere varius. Nunc tempus fermentum orci, a egestas risus molestie sed. Praesent id urna ut arcu tincidunt semper. Etiam luctus sem tortor, eget cursus eros molestie nec. Vivamus maximus tristique nisl in sodales. Vivamus vel molestie lacus.
-
-  %p
-    Aliquam erat volutpat. Vestibulum cursus euismod commodo. Nullam vulputate molestie turpis tincidunt rhoncus. Donec at felis non massa venenatis accumsan. Vestibulum consectetur orci quis mauris tristique, eu maximus felis finibus. Vivamus sed erat maximus, semper dolor sed, fermentum leo. Nullam a libero malesuada, convallis metus eu, aliquam quam. In feugiat ex sed lacinia cursus. Duis vestibulum diam quis luctus hendrerit. Curabitur volutpat sagittis leo id consectetur. Suspendisse id nisl purus.
-
-  %p
-    Suspendisse nec porttitor elit. Nulla interdum tellus neque, at condimentum libero vestibulum non. Mauris sollicitudin congue ante eget mollis. Sed dapibus purus sapien, sit amet mattis mi consequat vitae. Etiam ut leo nunc. Morbi aliquam facilisis leo. Curabitur pulvinar, felis tempor convallis bibendum, sem augue iaculis nunc, a dignissim nulla lectus a lorem. Aenean eleifend justo lobortis ante sodales, sit amet aliquet ante elementum. Praesent interdum pharetra nisi faucibus gravida. Vivamus congue imperdiet leo. Praesent posuere neque justo, et dictum quam lacinia vel.
-
-  %p
-    Vivamus iaculis pretium libero, quis cursus turpis sodales sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus turpis turpis, tempus eget velit et, mollis fermentum quam. Phasellus aliquam mollis aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus egestas erat at ligula consequat tempor. Cras metus nunc, pharetra sed ipsum eget, congue dictum ante. Quisque sit amet sagittis urna. Pellentesque cursus diam justo, sit amet luctus sem maximus in.
+.clearfix
+.space

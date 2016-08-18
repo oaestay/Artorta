@@ -57,6 +57,12 @@ Rails.application.routes.draw do
   root 'welcome#index'
   devise_for :users
   resources :cakes
-  get 'search' => 'cakes#search', as: :search
-  get 'catalog' => 'cakes#catalog', as: :catalog
+  get 'buscar'       =>   'cakes#search', as: :search
+  get 'catalogo'     =>   'cakes#catalog', as: :catalog
+  get 'subcatalogo'  =>   'cakes#cakes_tagged_with', as: :subcategory
+  get 'comprar'      =>   'pages#buy', as: :buy
+  get 'sabores'      =>   'pages#flavours', as: :flavours
+  get 'prensa'       =>   'pages#press', as: :press
+  get 'ubicacion'    =>   'pages#location', as: :location
+  get 'nosotros'     =>   'pages#us', as: :us
 end

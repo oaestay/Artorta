@@ -32,11 +32,11 @@ gem "paperclip", "~> 5.0.0"
 
 gem "cocoon"
 gem 'owlcarousel-rails'
-gem 'fancybox2-rails'
 gem 'acts-as-taggable-on', '~> 3.4'
 gem "font-awesome-rails"
 gem "select2-rails"
 gem 'will_paginate', '~> 3.1.0'
+gem 'gmaps4rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

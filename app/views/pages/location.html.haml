@@ -1,0 +1,34 @@
+.col-xs-10.col-xs-offset-1
+  %h1.text-center
+    Ubicación
+  %hr.sep
+  #map
+  %h1.text-center
+    Horario
+  %hr.sep
+  %p Lunes a Viernes de 09:30 a 19:00 y Sábado de 09:30 a 16:00.
+  %p
+    Para mayor información sobre la ubicación del local, hacer click
+    = link_to "aquí", location_url
+  .space
+:javascript
+  function initMap() {
+    var myLatLng = {lat: -33.426221, lng: -70.644640};
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: myLatLng,
+      scrollwheel: false,
+      zoom: 16
+    });
+
+    var image = "#{asset_path('marker.png')}";
+
+    var marker = new google.maps.Marker({
+      map: map,
+      position: myLatLng,
+      title: 'ArtTorta',
+      icon: image
+    });
+  }
+
+%script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyDj8ysJtCp-yCIvObNwRfABbBHrV4q3jlA	&callback=initMap"}

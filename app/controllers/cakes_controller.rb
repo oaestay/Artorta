@@ -16,17 +16,21 @@ class CakesController < ApplicationController
       @menu = params[:menu]
       case @menu
       when "decoradas"
-        @cakes = Cake.decoradas
+        @cakes = Cake.decoradas.order("popularity desc")
         @title = "Tortas decoradas"
+        @submenu = MENU_DECORADAS
       when "novios"
-        @cakes = Cake.novios
+        @cakes = Cake.novios.order("popularity desc")
         @title = "Tortas de novios"
+        @submenu = MENU_NOVIOS
       when "tradicionales"
-        @cakes = Cake.tradicionales
+        @cakes = Cake.tradicionales.order("popularity desc")
         @title = "Tortas tradicionales"
+        @submenu = MENU_TRADICIONALES
       when "cupcakes"
-        @cakes = Cake.cupcakes
+        @cakes = Cake.cupcakes.order("popularity desc")
         @title = "Cupcakes"
+        @submenu = MENU_CUPCAKES
       else
         params.delete :menu
         redirect_to catalog_url
@@ -59,7 +63,35 @@ class CakesController < ApplicationController
   end
 
   def cakes_tagged_with
-    
+    @menu = params[:menu]
+    @subcategory = params[:subcategory]
+    if (params.key? :menu)
+      case @menu
+      when "decoradas"
+        @cakes = Cake.decoradas.tagged_with(@subcategory).order("name asc")
+        @title = "Tortas decoradas"
+        @submenu = MENU_DECORADAS
+      when "novios"
+        @cakes = Cake.novios.tagged_with(@subcategory).order("name asc")
+        @title = "Tortas de novios"
+        @submenu = MENU_NOVIOS
+      when "tradicionales"
+        @cakes = Cake.tradicionales.tagged_with(@subcategory).order("name asc")
+        @title = "Tortas tradicionales"
+        @submenu = MENU_TRADICIONALES
+      when "cupcakes"
+        @cakes = Cake.cupcakes.tagged_with(@subcategory).order("name asc")
+        @title = "Cupcakes"
+        @submenu = MENU_CUPCAKES
+        params.delete :menu
+        redirect_to catalog_url
+      end
+    else
+      redirect_to catalog_url
+    end
+    unless @cakes.nil?
+      @cakes = @cakes.paginate(page: params[:page], per_page: 24)
+    end
   end
 
   def show

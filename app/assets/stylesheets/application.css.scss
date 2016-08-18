@@ -10,9 +10,6 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require fancybox
- *= require_self
  *= require bootstrap.min
  *= require bootstrap-theme.min
  *= require select2
@@ -22,14 +19,14 @@
  *= require font-awesome
  *= require animate
  *= require rise
+ *= require cakes
+ *= require pages
+ *= require welcome
+ *= require_self
  */
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
-
-$dark-color: #24242a;
-$light-color: #fff;
-$font-color: #0d0d0d;
-$link-color: #636363;
+@import "variables";
 
 /* ==========================================================================
 Global Styles
@@ -45,62 +42,62 @@ body {
   max-width: 80px;
   border: 2px solid $font-color;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .light-sep {
   max-width: 80px;
   border: 2px solid #fff;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .thin-sep {
   max-width: 80px;
   border: 1px solid $font-color;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .light-thin-sep {
   max-width: 80px;
   border: 1px solid #fff;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 /* ==========================================================================
 Typography
 ========================================================================== */
 h1 {
-  font-size: 72px;
-  font-weight: 300;
-  letter-spacing: 0.16em;
-}
-
-h2 {
   font-size: 36px;
   font-weight: 400;
   letter-spacing: 0.05em;
 }
 
-h3 {
+h2 {
   font-size: 26px;
   font-weight: 400;
 }
 
-h4 {
+h3 {
   font-size: 24px;
   font-weight: 400;
 }
 
-h5 {
+h4 {
   font-size: 22px;
   font-weight: 400;
 }
 
-h6 {
+h5 {
   font-size: 18px;
   font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 400px;
   letter-spacing: 0.05em;
 }
 
@@ -248,6 +245,11 @@ Space divs
   height: 93px;
 }
 
+.space{
+  width: 100%;
+  height: 25px;
+}
+
 /* ==========================================================================
 Flash and notices
 ========================================================================== */
@@ -318,7 +320,7 @@ Search
 #search-form {
   width: 100%;
   font-size: 0;
-  margin: 15px 0;
+  margin: 15px 0 0 0;
 
   #search_field, #category_field {
     border: 2px solid #24242a;
@@ -479,4 +481,77 @@ Pagination
 }
 .apple_pagination a:hover, .apple_pagination a:focus {
   text-decoration: underline;
+}
+
+
+/* ============
+Footer
+===============*/
+
+html {
+    position: relative;
+    height: 100%;
+}
+body {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    padding-bottom: 250px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    clear: both;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+    padding: 10px 0;
+    background: $dark-color;
+    color: $light-color;
+    font-size: 14px;
+    ul {
+      list-style: none;
+      li {
+        a {
+          color: $light-color;
+          &:hover{
+            color: #a3a3a3;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .light-thin-sep {
+      margin-bottom: 10px;
+    }
+}
+
+#minimap {
+  height: 220px;
+  margin-top: 10px;
+  width: 100%;
+  overflow-y: hidden;
+  img {
+    width: 100%;
+  }
+}
+
+.clear {
+  clear:both;
+  display:block;
+  overflow:hidden;
+  visibility:hidden;
+  width:0;
+  height:0;
+}
+
+@media (max-width: 768px){
+  body {
+    padding-bottom: 430px;
+  }
+  footer {
+    height: 430px;
+  }
 }

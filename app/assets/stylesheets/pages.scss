@@ -1,3 +1,40 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "variables";
+
+/* Comprar */
+
+.cuenta-banco{
+  width: 100%;
+}
+.delivery{
+  width: 100%;
+}
+
+/* Sabores */
+
+#sabores-tabla{
+  margin-bottom: 10px;
+  p {
+    margin-left: 10px;
+  }
+}
+
+.sabor{
+  background-color: rgb(208,208,208);
+  padding: 5px 20px 5px 0;
+  p{
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  margin: 10px 0;
+  border: 15px solid $dark-color;
+}

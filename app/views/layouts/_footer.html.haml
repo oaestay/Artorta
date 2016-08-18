@@ -1,0 +1,26 @@
+%footer
+  .col-xs-12.col-sm-3
+    %h4.text-center Art-Torta
+    %hr.light-thin-sep
+    %ul
+      %li= link_to 'Catálogo', catalog_url
+      %li= link_to 'Comprar', buy_url
+      %li= link_to 'Sabores', flavours_url
+      %li= link_to 'Prensa', press_url
+      %li= link_to 'Ubicación', location_url
+      %li= link_to 'Nosotros', us_url
+  .col-xs-12.col-sm-3
+    %h4.text-center Contacto
+    %hr.light-thin-sep
+    %ul
+      %li Dirección:
+      %li Manzano 551, Recoleta
+      %li E-mail:
+      %li info@artorta.cl
+      %li Teléfonos:
+      %li 02-27353947
+      %li 02-27354193
+      %li 02-27375164
+  .col-sm-6.hidden-xs
+    #minimap
+      = link_to((image_tag "minimap"), location_url)

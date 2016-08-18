@@ -1,0 +1,41 @@
+@import "variables";
+
+.submenu {
+  margin: 10px 0;
+  .block{
+    background: #24242a;
+    font-size: 16px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    color: #fff;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: 3px solid $dark-color;
+    a{
+      padding: 5px 5px;
+      display: inline-block;
+      color: #fff;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      background: #fff;
+      color: $font-color;
+      text-decoration: none;
+      a{
+        color: $font-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.cakes {
+  margin-top: 10px;
+}
