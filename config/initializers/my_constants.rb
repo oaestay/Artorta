@@ -1,6 +1,6 @@
 require 'ostruct'
 
-STOP_WORDS = ['', 'un', 'una', 'unas', 'unos', 'uno', 'sobre',
+STOP_WORDS = ['', 'un', 'una', 'unas', 'unos', 'uno', 'sobre', 'de',
   'todo', 'también', 'tras', 'otro', 'algún', 'alguno', 'alguna', 'algunos',
   'algunas', 'es', 'eres', 'esta', 'estan', 'como', 'en', 'para', 'atras',
   'ambos', 'pero', 'por', 'cada', 'tiene', 'tienen', 'el', 'la', 'lo', 'las',
@@ -43,7 +43,6 @@ MENU_NOVIOS = {
   "musica" => "Música",
   "cuadradas" => "Cuadradas",
   "cupcakes_minitortas" => "Cupcakes y Minitortas",
-  "cakemapping" => "Cake Mapping",
 }
 
 MENU_TRADICIONALES = {

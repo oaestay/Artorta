@@ -65,4 +65,5 @@ Rails.application.routes.draw do
   get 'prensa'       =>   'pages#press', as: :press
   get 'ubicacion'    =>   'pages#location', as: :location
   get 'nosotros'     =>   'pages#us', as: :us
+  get 'cakemapping'  =>   'pages#cakemapping', as: :cakemapping
 end

@@ -34,6 +34,19 @@
       }
     }
   }
+  .important_block{
+    background: #46758C;
+    border: 3px solid #46758C;
+    &:hover,
+    &:focus,
+    &:active {
+      background: #fff;
+      color: #46758C;
+      a{
+        color: #46758C;
+      }
+    }
+  }
 }
 
 .cakes {

@@ -4,7 +4,7 @@
   .clearfix
   = image_tag(@cake.image.url(:medium))
   %h5= @cake.name
-  %h6= @cake.code
+  %h6= "Código: " + @cake.code
   - if @cake.description
     %h6= @cake.description
   - if @cake.includes_couple

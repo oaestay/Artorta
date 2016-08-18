@@ -1,8 +1,11 @@
 .text-center
   = render 'catalog_header'
   .submenu
-    -@submenu.each do |key, value|
+    - @submenu.each do |key, value|
       %span.block= link_to value, subcategory_url(menu: @menu, subcategory: key)
+    - if @menu == "novios"
+      %span.block= link_to "Cake Mapping", cakemapping_url
+      %span.block.important_block= link_to "Cúpulas", "#"
   .clearfix
   .apple_pagination
     = will_paginate @cakes, container: false, previous_label: 'Anterior', next_label: 'Siguiente'

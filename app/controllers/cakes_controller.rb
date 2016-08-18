@@ -1,7 +1,7 @@
 require "i18n"
 
 class CakesController < ApplicationController
-  before_action :authenticate_user!, :except => [:catalog, :index, :show, :search]
+  before_action :authenticate_user!, :except => [:catalog, :index, :show, :search, :cakes_tagged_with]
   before_action :set_cake, only: [:show, :edit, :update, :destroy]
 
   def catalog
