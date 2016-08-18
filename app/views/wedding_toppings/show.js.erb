@@ -1,0 +1,6 @@
+$modal = $('.modal'),
+$modalBody = $('.modal .modal-body'),
+$modalHeading = $('.modal .modal-heading');
+$modalHeading.html("<%= @wedding_topping.name %>");
+$modalBody.html("<%= escape_javascript(render @wedding_topping) %>");
+$modal.modal();

@@ -1,6 +1,7 @@
 require "i18n"
 
 class CakesController < ApplicationController
+  load_and_authorize_resource
   before_action :authenticate_user!, :except => [:catalog, :index, :show, :search, :cakes_tagged_with]
   before_action :set_cake, only: [:show, :edit, :update, :destroy]
 
@@ -69,19 +70,19 @@ class CakesController < ApplicationController
       case @menu
       when "decoradas"
         @cakes = Cake.decoradas.tagged_with(@subcategory).order("name asc")
-        @title = "Tortas decoradas"
+        @title = MENU_DECORADAS[@subcategory]
         @submenu = MENU_DECORADAS
       when "novios"
         @cakes = Cake.novios.tagged_with(@subcategory).order("name asc")
-        @title = "Tortas de novios"
+        @title = MENU_NOVIOS[@subcategory]
         @submenu = MENU_NOVIOS
       when "tradicionales"
         @cakes = Cake.tradicionales.tagged_with(@subcategory).order("name asc")
-        @title = "Tortas tradicionales"
+        @title = MENU_TRADICIONALES[@subcategory]
         @submenu = MENU_TRADICIONALES
       when "cupcakes"
         @cakes = Cake.cupcakes.tagged_with(@subcategory).order("name asc")
-        @title = "Cupcakes"
+        @title = MENU_CUPCAKES[@subcategory]
         @submenu = MENU_CUPCAKES
         params.delete :menu
         redirect_to catalog_url
@@ -100,8 +101,7 @@ class CakesController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.js # show.js.erb
-      format.json { render json: @cake }
-  end
+    end
   end
 
   def new

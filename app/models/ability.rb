@@ -21,7 +21,8 @@ class Ability
     if user.admin?
       can :manage, :all
     else
-      can :read, [Cake]
+      can :read, [Cake, WeddingTopping, Press, Company]
+      can [:catalog, :search, :cakes_tagged_with], Cake
     end
   end
 end

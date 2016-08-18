@@ -1,24 +1,3 @@
-:javascript
-  function cycleImages(){
-  var images = $('#carrousel span'),
-  now    = images.filter(':visible'),
-  next   = now.next().length ? now.next() : images.first(),
-  speed  = 1500;
-
-  now.fadeOut(speed);
-  next.fadeIn(speed);
-  }
-
-  $(function() {
-  setInterval(cycleImages, 4000);
-  var carrousel = $('#carrousel');
-  var info = $("#welcome_info");
-  var image = $('#carrousel span').filter(':visible');
-  carrousel.height(Math.max(image.height(), info.height()));
-  var window = $(window).on('resize', function(){
-      carrousel.height(Math.max(image.height(), info.height()));
-    }).trigger('resize');
-  });
 #owl-hero.owl-carousel.owl-theme
   .item
     = image_tag('slider_0.jpg')
@@ -48,10 +27,32 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor diam, hendrerit non turpis id, malesuada malesuada neque. Integer vulputate elit sit amet odio luctus, feugiat porta lectus pellentesque. Curabitur lacinia porttitor lorem sed egestas. Suspendisse potenti. Integer pretium odio risus, at bibendum leo feugiat facilisis. Etiam varius ligula eget neque consequat, et efficitur ante placerat. Vivamus metus metus, vehicula at suscipit eu, luctus vel neque. Suspendisse tortor mi, commodo in purus vitae, maximus efficitur neque. Aenean vehicula dui turpis, posuere consequat odio varius quis.
   .col-sm-12.col-md-6
     %p.text-center
-      = link_to(image_tag("button_0.jpg"), "#", class: "index-button")
+      = link_to(image_tag("button_0.jpg"), companies_url, class: "index-button")
   .col-sm-12.col-md-6
     %p.text-center
-      = link_to(image_tag("button_1.jpg"), "#", class: "index-button")
+      = link_to(image_tag("button_1.jpg"), wedding_toppings_url, class: "index-button")
 .clearfix
 .clear
 .space
+
+:javascript
+  function cycleImages(){
+  var images = $('#carrousel span'),
+  now    = images.filter(':visible'),
+  next   = now.next().length ? now.next() : images.first(),
+  speed  = 1500;
+
+  now.fadeOut(speed);
+  next.fadeIn(speed);
+  }
+
+  $(function() {
+  setInterval(cycleImages, 4000);
+  var carrousel = $('#carrousel');
+  var info = $("#welcome_info");
+  var image = $('#carrousel span').filter(':visible').children("img");
+  carrousel.height(Math.max(image.height(), info.height()));
+  var window = $(window).on('resize ready load', function(){
+      $('#carrousel').height(Math.max($('#carrousel span').filter(':visible').children("img").height(), $("#welcome_info").height()));
+    }).trigger('resize ready load');
+  });

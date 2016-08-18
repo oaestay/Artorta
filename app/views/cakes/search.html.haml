@@ -1,8 +1,15 @@
 .text-center
-  = render 'catalog_header'
-  - @cakes.each_with_index do |c, index|
-    = render partial: 'item', locals: {c: c, index: index}
-  = render "layouts/modal"
+  = render 'layouts/catalog_header'
   .clearfix
-  .apple_pagination
-    = will_paginate @cakes, container: false, previous_label: 'Anterior', next_label: 'Siguiente'
+  .space
+  - if @cakes.total_pages > 1
+    .apple_pagination
+      = will_paginate @cakes, container: false, previous_label: 'Anterior', next_label: 'Siguiente'
+  .cakes
+    - @cakes.each_with_index do |c, index|
+      = render partial: 'item', locals: {c: c, index: index}
+    = render "layouts/modal"
+  .clearfix
+  - if @cakes.total_pages > 1
+    .apple_pagination
+      = will_paginate @cakes, container: false, previous_label: 'Anterior', next_label: 'Siguiente'

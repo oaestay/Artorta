@@ -1,12 +1,12 @@
 .text-center
-  = render 'catalog_header'
+  = render 'layouts/catalog_header'
   %h1 ¡Las más populares!
-  %hr.thin-sep
+  %hr.sep
   - @most_popular.each_with_index do |c, index|
     = render partial: 'item', locals: {c: c, index: index}
   .clearfix
   %h1 ¡Nuevas Tortas!
-  %hr.thin-sep
+  %hr.sep
   - @newest.each_with_index do |c, index|
     = render partial: 'item', locals: {c: c, index: index}
   = render "layouts/modal"

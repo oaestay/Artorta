@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :companies
+  resources :presses
+  resources :wedding_toppings
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -62,7 +65,6 @@ Rails.application.routes.draw do
   get 'subcatalogo'  =>   'cakes#cakes_tagged_with', as: :subcategory
   get 'comprar'      =>   'pages#buy', as: :buy
   get 'sabores'      =>   'pages#flavours', as: :flavours
-  get 'prensa'       =>   'pages#press', as: :press
   get 'ubicacion'    =>   'pages#location', as: :location
   get 'nosotros'     =>   'pages#us', as: :us
   get 'cakemapping'  =>   'pages#cakemapping', as: :cakemapping

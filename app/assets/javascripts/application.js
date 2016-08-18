@@ -45,11 +45,9 @@ $(document).ready(function() {
 
     });
 
-});
+    var preloader = $(".preloader");
+    $(window).load(function() {
+        preloader.remove();
+    })
 
-$(document).on('page:fetch', function() {
-  $(".preloader").show();
-});
-$(document).on('page:change', function() {
-  $(".preloader").hide();
 });

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160806003614) do
+ActiveRecord::Schema.define(version: 20160818183506) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,28 @@ ActiveRecord::Schema.define(version: 20160806003614) do
     t.datetime "image_updated_at"
     t.text     "description",        default: ""
     t.integer  "popularity",         default: 0
+  end
+
+  create_table "companies", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "popularity",         default: 0
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
+  create_table "presses", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "popularity",         default: 0
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "prices", force: :cascade do |t|
@@ -82,6 +104,18 @@ ActiveRecord::Schema.define(version: 20160806003614) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+
+  create_table "wedding_toppings", force: :cascade do |t|
+    t.string   "name"
+    t.string   "code"
+    t.integer  "popularity",         default: 0
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
 
   add_foreign_key "prices", "cakes"
 end

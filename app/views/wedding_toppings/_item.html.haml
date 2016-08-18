@@ -1,0 +1,21 @@
+.cake.col-xs-12.col-sm-6.col-md-4.col-lg-3
+  = link_to c, remote: true do
+    = image_tag(c.image.url(:small))
+  .cake_info
+    %h4
+      = link_to(c.name, c, remote: true)
+      -if can? :manage, c
+        = link_to((fa_icon "pencil", text: ""), edit_cake_path(c))
+        = link_to((fa_icon "times", text: ""), c)
+    = link_to c, remote: true do
+      %h5= "Código: " + c.code
+-if(((index + 1)%4).zero? && ((index + 1)%3).zero?)
+  .clearfix
+-elsif(((index + 1)%2).zero? && ((index + 1)%3).zero?)
+  .clearfix.visible-sm.visible-md
+-elsif(((index + 1)%4).zero?)
+  .clearfix.visible-sm.visible-lg
+-elsif(((index + 1)%3).zero?)
+  .clearfix.visible-md
+-elsif(((index + 1)%2).zero?)
+  .clearfix.visible-sm

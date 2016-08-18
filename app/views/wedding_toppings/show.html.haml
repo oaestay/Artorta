@@ -1,0 +1,5 @@
+.cake.col-xs-12.col-sm-6.col-md-4.col-lg-3
+  = image_tag(@wedding_topping.image.url(:large))
+  .cake_info
+    %h5= @wedding_topping.name
+    %h6= "Código: " + @wedding_topping.code
