@@ -48,9 +48,7 @@
 
   $(function() {
   setInterval(cycleImages, 4000);
-  var carrousel = $('#carrousel');
-  var info = $("#welcome_info");
-  var image = $('#carrousel span').filter(':visible').children("img");
+  $('#carrousel').height(Math.max($('#carrousel span').filter(':visible').children("img").height(), $("#welcome_info").height()));
   carrousel.height(Math.max(image.height(), info.height()));
   var window = $(window).on('resize ready load', function(){
       $('#carrousel').height(Math.max($('#carrousel span').filter(':visible').children("img").height(), $("#welcome_info").height()));
