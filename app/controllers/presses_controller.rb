@@ -12,8 +12,8 @@ class PressesController < ApplicationController
   # GET /presses/1
   # GET /presses/1.json
   def show
-    @wedding_topping.popularity += 1
-    @wedding_topping.save
+    @press.popularity += 1
+    @press.save
     respond_to do |format|
       format.html # show.html.erb
       format.js # show.js.erb

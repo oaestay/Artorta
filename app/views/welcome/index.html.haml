@@ -45,7 +45,7 @@
   now.fadeOut(speed);
   next.fadeIn(speed);
   }
-
+  $('#carrousel').height(Math.max($('#carrousel span').filter(':visible').children("img").height(), $("#welcome_info").height()));
   $(function() {
   setInterval(cycleImages, 4000);
   $('#carrousel').height(Math.max($('#carrousel span').filter(':visible').children("img").height(), $("#welcome_info").height()));
