@@ -45,12 +45,14 @@
   now.fadeOut(speed);
   next.fadeIn(speed);
   }
-  $('#carrousel').height(Math.max($('#carrousel span').filter(':visible').children("img").height(), $("#welcome_info").height()));
+
   $(function() {
   setInterval(cycleImages, 4000);
   $('#carrousel').height(Math.max($('#carrousel span').filter(':visible').children("img").height(), $("#welcome_info").height()));
-  carrousel.height(Math.max(image.height(), info.height()));
-  var window = $(window).on('resize ready load', function(){
+  var window = $(window).on('resize', function(){
       $('#carrousel').height(Math.max($('#carrousel span').filter(':visible').children("img").height(), $("#welcome_info").height()));
-    }).trigger('resize ready load');
+    }).trigger('resize');
+  });
+  $(document).ready(function() {
+    $('#carrousel').height(Math.max($('#carrousel span').filter(':visible').children("img").height(), $("#welcome_info").height()));
   });
