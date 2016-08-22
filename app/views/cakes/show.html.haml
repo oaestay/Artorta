@@ -1,4 +1,12 @@
-.cake.col-xs-12.col-sm-6.col-md-4.col-lg-3
+- if can? :create, Cake
+  .space
+  .col-xs-12.col-sm-5.col-sm-offset-1
+    %span.btn-block= link_to "Nueva Torta o Cupcake", new_cake_url
+  .col-xs-12.col-sm-5
+    %span.btn-block= link_to("Cerrar Sesión", destroy_user_session_path, method: :delete)
+  .clearfix
+.cake.col-xs-12.text-center
+  .space
   = image_tag(@cake.image.url(:large))
   .cake_info
     %h5= @cake.name

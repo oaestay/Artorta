@@ -1,13 +1,3 @@
-#owl-hero.owl-carousel.owl-theme
-  .item
-    = image_tag('slider_0.jpg')
-  .item
-    = image_tag('slider_1.jpg')
-  .item
-    = image_tag('slider_2.jpg')
-  .item
-    = image_tag('slider_3.jpg')
-.clearfix
 .col-sm-3.col-sm-offset-1.hidden-xs
   #carrousel
     %span.active
@@ -24,35 +14,38 @@
       = image_tag("carrousel_5.png")
 #welcome_info.col-xs-12.col-sm-7
   %p
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor diam, hendrerit non turpis id, malesuada malesuada neque. Integer vulputate elit sit amet odio luctus, feugiat porta lectus pellentesque. Curabitur lacinia porttitor lorem sed egestas. Suspendisse potenti. Integer pretium odio risus, at bibendum leo feugiat facilisis. Etiam varius ligula eget neque consequat, et efficitur ante placerat. Vivamus metus metus, vehicula at suscipit eu, luctus vel neque. Suspendisse tortor mi, commodo in purus vitae, maximus efficitur neque. Aenean vehicula dui turpis, posuere consequat odio varius quis.
+    Pastelería Art-Torta se especializa en
+    = link_to('tortas decoradas', cakes_url(menu: "decoradas"))
+    ,
+    = link_to('tortas de novios', cakes_url(menu: "novios"))
+    y
+    = link_to('cupcakes', cakes_url(menu: "cupcakes"))
+    \. Nuestro objetivo es crear en tu torta un modelo único y personalizado. Las grandes Empresas, los canales de televisión y sobre todo la gran cantidad de clientes que nos han elegido durante estos 16 años, nos han convertido en la pastelería de los grandes eventos de nuestro país.
+  %p
+    Visita la
+    = link_to('mayor variedad de tortas', catalog_url)
+    que puedas encontrar y disfruta de nuestros
+    = link_to('nuevos modelos', catalog_url) + "."
   .col-sm-12.col-md-6
     %p.text-center
       = link_to(image_tag("button_0.jpg"), companies_url, class: "index-button")
+    .space
   .col-sm-12.col-md-6
     %p.text-center
       = link_to(image_tag("button_1.jpg"), wedding_toppings_url, class: "index-button")
+    .space
 .clearfix
 .clear
 .space
-
 :javascript
   function cycleImages(){
   var images = $('#carrousel span'),
   now    = images.filter(':visible'),
   next   = now.next().length ? now.next() : images.first(),
   speed  = 1500;
-
   now.fadeOut(speed);
   next.fadeIn(speed);
   }
-
   $(function() {
   setInterval(cycleImages, 4000);
-  $('#carrousel').height(Math.max($('#carrousel span').filter(':visible').children("img").height(), $("#welcome_info").height()));
-  var window = $(window).on('resize', function(){
-      $('#carrousel').height(Math.max($('#carrousel span').filter(':visible').children("img").height(), $("#welcome_info").height()));
-    }).trigger('resize');
-  });
-  $(document).ready(function() {
-    $('#carrousel').height(Math.max($('#carrousel span').filter(':visible').children("img").height(), $("#welcome_info").height()));
   });

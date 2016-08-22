@@ -97,6 +97,7 @@ Sliders Style
 
 #carrousel{
   display: block;
+  height: 500px;
   span {
     display:none;
     position: absolute;
@@ -105,6 +106,7 @@ Sliders Style
     width: 100%;
     img {
       width: 100%;
+      max-width: 310px;
       float: none;
     }
     &:first-child {
