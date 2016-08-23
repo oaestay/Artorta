@@ -144,6 +144,9 @@ class CakesController < ApplicationController
   end
 
   def destroy
+    @cake.prices.each do |p|
+      p.destroy
+    end
     @cake.destroy
     flash[:notice] = "Torta eliminada correctamente"
     redirect_to cakes_url
