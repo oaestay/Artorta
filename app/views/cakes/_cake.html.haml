@@ -13,7 +13,11 @@
     %p Porciones mínimas: #{@cake.minimum_portions}
     %p Precio por porción: $#{@cake.portion_price}
   - else
-    - @cake.prices.each do |p|
-      %p #{p.portions} personas: $#{p.price}
+    - unless @cake.category == "cupcakes"
+      - @cake.prices.each do |p|
+        %p #{p.portions} personas: $#{p.price}
+    - else
+      %p Precio unitario: $#{@cake.prices[0].price}
+      %p Precio por docena $#{@cake.prices[1].price}
   - if @cake.warranty > 0
     %p Garantía: $#{@cake.warranty}
