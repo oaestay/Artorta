@@ -59,7 +59,10 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
   devise_for :users
-  resources :cakes
+  resources :cakes do
+    get :autocomplete_tag_name, :on => :collection
+  end
+
   get 'buscar'       =>   'cakes#search', as: :search
   get 'catalogo'     =>   'cakes#catalog', as: :catalog
   get 'subcatalogo'  =>   'cakes#cakes_tagged_with', as: :subcategory

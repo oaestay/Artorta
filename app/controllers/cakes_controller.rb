@@ -4,6 +4,7 @@ class CakesController < ApplicationController
   load_and_authorize_resource
   before_action :authenticate_user!, :except => [:catalog, :index, :show, :search, :cakes_tagged_with]
   before_action :set_cake, only: [:show, :edit, :update, :destroy]
+  autocomplete :tag, :name, :class_name => 'ActsAsTaggableOn::Tag', :limit => 5
 
   def catalog
     @title = "Catálogo"
@@ -47,7 +48,7 @@ class CakesController < ApplicationController
   def search
     @title = "Resultados de la búsqueda"
     @category = params[:category]
-    @tags = remove_stopwords(params[:search].split())
+    @tags = remove_stopwords(params[:tag_list].split())
     case @category
     when "all"
       @cakes = Cake.tagged_with(@tags, :any => true)

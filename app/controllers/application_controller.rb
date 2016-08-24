@@ -7,4 +7,8 @@ class ApplicationController < ActionController::Base
     method = "#{resource}_params"
     params[resource] &&= send(method) if respond_to?(method, true)
   end
+  
+  def get_autocomplete_items(parameters)
+    super(parameters).presence || [OpenStruct.new(id: '', parameters[:method].to_s => '')]
+  end
 end

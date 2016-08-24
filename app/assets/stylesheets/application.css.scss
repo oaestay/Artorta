@@ -18,6 +18,9 @@
  *= require owl-theme
  *= require font-awesome
  *= require animate
+ *= require jquery-ui.min
+ *= require jquery-ui.structure.min
+ *= require jquery-ui.theme.min
  *= require rise
  *= require cakes
  *= require pages
@@ -338,7 +341,7 @@ Search
   #category_field {
     width: 30%;
   }
-  #search {
+  #tag_list {
     font-size: 16px;
     height: 100%;
     width: 100%;

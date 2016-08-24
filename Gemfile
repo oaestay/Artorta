@@ -33,6 +33,7 @@ gem "paperclip", "~> 5.0.0"
 gem "cocoon"
 gem 'owlcarousel-rails'
 gem 'acts-as-taggable-on', '~> 3.4'
+gem 'rails3-jquery-autocomplete'
 gem "font-awesome-rails"
 gem "select2-rails"
 gem 'will_paginate', '~> 3.1.0'

@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui.min
+//= require autocomplete-rails
 //= require bootstrap.min
 //= require cocoon
 //= require owl.carousel.min
@@ -49,5 +51,10 @@ $(document).ready(function() {
     $(window).load(function() {
         preloader.remove();
     })
-
+    $("#tag_list").on('autocompleteresponse', function(event, ui) {
+          var content;
+          if (((content = ui.content) != null ? content[0].id.length : void 0) === 0) {
+            $(this).autocomplete('close');
+          }
+      });
 });
