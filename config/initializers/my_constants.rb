@@ -6,7 +6,7 @@ STOP_WORDS = ['', 'un', 'una', 'unas', 'unos', 'uno', 'sobre', 'de', 'a', 'o',
   'ambos', 'pero', 'por', 'cada', 'tiene', 'tienen', 'el', 'la', 'lo', 'las',
   'los', 'su', 'si', 'dentro', 'solo', 'ultimo', 'largo', 'e', 'i', 'u', 'y',
   'bastante', 'muchos', 'sus', 'dos', 'bajo', 'arriba', 'encima', 'muy', 'bien',
-  'con', 'entre', 'sin', 'de', 'del', 'mi']
+  'con', 'entre', 'sin', 'de', 'del', 'mi', '_']
 
 MENU_DECORADAS = {
   "ninas" => "Niñas",

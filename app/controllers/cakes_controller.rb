@@ -165,7 +165,7 @@ class CakesController < ApplicationController
   end
 
   def normalize_string(a)
-    I18n.transliterate(a).gsub(/[^0-9A-Za-z ]/, '').downcase.strip
+    I18n.transliterate(a).gsub(/[^0-9A-Za-z_ ]/, '').downcase.strip
   end
 
   def remove_stopwords(tag_list)
