@@ -61,7 +61,7 @@ class CakesController < ApplicationController
     when "cupcakes"
       @cakes = Cake.cupcakes.tagged_with(@tags, :any => true)
     end
-    @cakes = @cakes.paginate(:page => params[:page], :per_page => 24)
+    @cakes = @cakes.sort_by { |o| -(@tags & o.tag_list).length }.paginate(:page => params[:page], :per_page => 24)
   end
 
   def cakes_tagged_with
