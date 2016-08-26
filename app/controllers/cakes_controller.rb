@@ -18,19 +18,19 @@ class CakesController < ApplicationController
       @menu = params[:menu]
       case @menu
       when "decoradas"
-        @cakes = Cake.decoradas.order("popularity desc")
+        @cakes = Cake.decoradas
         @title = "Tortas decoradas"
         @submenu = MENU_DECORADAS
       when "novios"
-        @cakes = Cake.novios.order("popularity desc")
+        @cakes = Cake.novios
         @title = "Tortas de novios"
         @submenu = MENU_NOVIOS
       when "tradicionales"
-        @cakes = Cake.tradicionales.order("popularity desc")
+        @cakes = Cake.tradicionales
         @title = "Tortas tradicionales"
         @submenu = MENU_TRADICIONALES
       when "cupcakes"
-        @cakes = Cake.cupcakes.order("popularity desc")
+        @cakes = Cake.cupcakes
         @title = "Cupcakes"
         @submenu = MENU_CUPCAKES
       else
@@ -41,7 +41,7 @@ class CakesController < ApplicationController
       redirect_to catalog_url
     end
     unless @cakes.nil?
-      @cakes = @cakes.paginate(page: params[:page], per_page: 24)
+      @cakes = @cakes.order("popularity desc, created_at desc").paginate(page: params[:page], per_page: 24)
     end
   end
 
@@ -70,19 +70,19 @@ class CakesController < ApplicationController
     if (params.key? :menu)
       case @menu
       when "decoradas"
-        @cakes = Cake.decoradas.tagged_with(@subcategory).order("name asc")
+        @cakes = Cake.decoradas
         @title = MENU_DECORADAS[@subcategory]
         @submenu = MENU_DECORADAS
       when "novios"
-        @cakes = Cake.novios.tagged_with(@subcategory).order("name asc")
+        @cakes = Cake.novios
         @title = MENU_NOVIOS[@subcategory]
         @submenu = MENU_NOVIOS
       when "tradicionales"
-        @cakes = Cake.tradicionales.tagged_with(@subcategory).order("name asc")
+        @cakes = Cake.tradicionales
         @title = MENU_TRADICIONALES[@subcategory]
         @submenu = MENU_TRADICIONALES
       when "cupcakes"
-        @cakes = Cake.cupcakes.tagged_with(@subcategory).order("name asc")
+        @cakes = Cake.cupcakes
         @title = MENU_CUPCAKES[@subcategory]
         @submenu = MENU_CUPCAKES
         params.delete :menu
@@ -92,7 +92,7 @@ class CakesController < ApplicationController
       redirect_to catalog_url
     end
     unless @cakes.nil?
-      @cakes = @cakes.paginate(page: params[:page], per_page: 24)
+      @cakes = @cakes.tagged_with(@subcategory).order("name asc, popularity desc, created_at desc").paginate(page: params[:page], per_page: 24)
     end
   end
 
