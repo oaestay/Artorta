@@ -10,7 +10,7 @@
     .clearfix
   - if @companies.total_pages > 1
     .apple_pagination
-      = will_paginate @companies, container: false, previous_label: 'Anterior', next_label: 'Siguiente'
+      = will_paginate @companies, container: false, previous_label: 'Anterior', next_label: 'Siguiente', inner_window: 2, outer_window: 1
   .cakes
     - @companies.each_with_index do |c, index|
       = render partial: 'item', locals: {c: c, index: index}
@@ -18,4 +18,4 @@
   .clearfix
   - if @companies.total_pages > 1
     .apple_pagination
-      = will_paginate @companies, container: false, previous_label: 'Anterior', next_label: 'Siguiente'
+      = will_paginate @companies, container: false, previous_label: 'Anterior', next_label: 'Siguiente', inner_window: 2, outer_window: 1

@@ -5,7 +5,7 @@
     %h4
       = link_to(c.name, c, remote: true)
       -if can? :manage, c
-        = link_to((fa_icon "pencil", text: ""), edit_cake_path(c))
+        = link_to((fa_icon "pencil", text: ""), edit_company_path(c))
         = link_to((fa_icon "times", text: ""), c, method: :delete, data: { confirm: '¿Estás seguro?' })
 -if(((index + 1)%4).zero? && ((index + 1)%3).zero?)
   .clearfix
