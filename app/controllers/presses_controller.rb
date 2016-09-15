@@ -6,13 +6,12 @@ class PressesController < ApplicationController
   # GET /presses
   # GET /presses.json
   def index
-    @presses = Press.all.order("popularity desc").paginate(page: params[:page], per_page: 24)
+    @presses = Press.all.order("name desc").paginate(page: params[:page], per_page: 24)
   end
 
   # GET /presses/1
   # GET /presses/1.json
   def show
-    @press.popularity += 1
     @press.save
     respond_to do |format|
       format.html # show.html.erb
