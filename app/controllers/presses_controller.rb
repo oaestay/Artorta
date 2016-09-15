@@ -6,7 +6,7 @@ class PressesController < ApplicationController
   # GET /presses
   # GET /presses.json
   def index
-    @presses = Press.all.order("name desc").paginate(page: params[:page], per_page: 24)
+    @presses = Press.all.order("name asc").paginate(page: params[:page], per_page: 24)
   end
 
   # GET /presses/1

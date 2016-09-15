@@ -4,7 +4,7 @@ class CompaniesController < ApplicationController
   before_action :set_company, only: [:show, :edit, :update, :destroy]
 
   def index
-    @companies = Company.all.order("name desc").paginate(page: params[:page], per_page: 24)
+    @companies = Company.all.order("name asc").paginate(page: params[:page], per_page: 24)
   end
 
   def show
