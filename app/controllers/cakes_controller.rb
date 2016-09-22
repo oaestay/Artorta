@@ -85,6 +85,7 @@ class CakesController < ApplicationController
         @cakes = Cake.cupcakes
         @title = MENU_CUPCAKES[@subcategory]
         @submenu = MENU_CUPCAKES
+      else
         params.delete :menu
         redirect_to catalog_url
       end
