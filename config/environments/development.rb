@@ -39,4 +39,15 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
   Paperclip.options[:command_path] = "/usr/local/bin/"
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.raise_delivery_errors = true
+  # SMTP settings for gmail
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :user_name            => ENV['ARTORTA_DELIVERY_MAIL'],
+    :password             => ENV['ARTORTA_DELIVERY_MAIL_PASSWORD'],
+    :authentication       => "plain",
+    :openssl_verify_mode  => 'none'
+  }
 end

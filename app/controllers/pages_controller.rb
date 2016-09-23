@@ -18,6 +18,9 @@ class PagesController < ApplicationController
 
   def cakemapping
   end
-  
+
+  def mail_test
+    DeliveryMailer.sample_email().deliver
+  end
 
 end
