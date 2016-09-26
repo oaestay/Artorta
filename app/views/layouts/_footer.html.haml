@@ -5,6 +5,7 @@
     %ul
       %li= link_to 'Catálogo', catalog_url
       %li= link_to 'Comprar', buy_url
+      %li= link_to 'Despacho', buy_url(anchor: "delivery")
       %li= link_to 'Sabores', flavours_url
       %li= link_to 'Cúpulas', wedding_toppings_url
       %li= link_to 'Empresas', companies_url
@@ -23,6 +24,7 @@
       %li 02-27353947
       %li 02-27354193
       %li 02-27375164
+      %li +56978093790
   .col-sm-6.hidden-xs
     #minimap
       = link_to((image_tag "minimap.jpg"), location_url)

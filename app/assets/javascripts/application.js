@@ -21,32 +21,16 @@
 
 $(document).ready(function() {
 
-    /***************** Navbar-Collapse ******************/
-
-    $(window).scroll(function () {
-        if ($(".navbar").offset().top > 20) {
-            $(".navbar-fixed-top").addClass("top-nav-collapse");
-        } else {
-            $(".navbar-fixed-top").removeClass("top-nav-collapse");
-        }
-    });
-
-    /***************** Scroll Spy ******************/
-
-
-    /***************** Owl Carousel ******************/
-
     $("#owl-hero").owlCarousel({
 
         loop: true,
-        nav: true, // Show next and prev buttons
+        nav: true,
         items: 1,
         autoPlay: true,
         autoplaySpeed: 100,
         navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
 
     });
-
     var preloader = $(".preloader");
     $(window).load(function() {
         preloader.remove();

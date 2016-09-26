@@ -42,148 +42,6 @@ esheets/application.css.scss	/^.nav-space{$/;"	function	line:233
 esheets/application.css.scss	/^.nav-space{$/;"	function	line:233
 esheets/application.css.scss	/^.nav-space{$/;"	function	line:233
 esheets/application.css.scss	/^.nav-space{$/;"	function	line:233
-.navbar-default	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default {$/;"	function	line:6
-.navbar-default .navbar-header	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .navbar-header {$/;"	function	line:11
-.navbar-default .nav-wrap	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .nav-wrap {$/;"	function	line:15
-.navbar-default .nav > li > a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .nav > li > a {$/;"	function	line:18
-.navbar-default .nav > li > a:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .nav > li > a:hover,$/;"	function	line:29
-.navbar-default .nav > li > a:focus	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .nav > li > a:focus,$/;"	function	line:30
-.navbar-default .nav > li > a:active	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .nav > li > a:active {$/;"	function	line:31
-.navbar-default .social-media	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .social-media {$/;"	function	line:34
-.navbar-default .social-media i	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .social-media i {$/;"	function	line:38
-.navbar-default .navbar-nav > .active > a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .navbar-nav > .active > a,$/;"	function	line:42
-.navbar-default .navbar-nav > .active > a:focus	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .navbar-nav > .active > a:focus,$/;"	function	line:43
-.navbar-default .navbar-nav > .active > a:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .navbar-nav > .active > a:hover {$/;"	function	line:44
-.top-nav-collapse	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.top-nav-collapse {$/;"	function	line:49
-.top-nav-collapse .navbar-brand	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.top-nav-collapse .navbar-brand {$/;"	function	line:52
-.top-nav-collapse .navbar-brand img	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.top-nav-collapse .navbar-brand img {$/;"	function	line:55
-.top-nav-collapse .nav > li > a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.top-nav-collapse .nav > li > a {$/;"	function	line:58
-.img-responsive	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.img-responsive{$/;"	function	line:62
-#owl-hero	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#owl-hero {$/;"	function	line:69
-#owl-hero .item	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#owl-hero .item {$/;"	function	line:72
-#owl-hero .item img	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#owl-hero .item img{$/;"	function	line:74
-#owl-hero .item .caption	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#owl-hero .item .caption {$/;"	function	line:79
-#owl-hero .item .caption h1	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#owl-hero .item .caption h1 {$/;"	function	line:88
-#owl-hero .item .caption h1 span	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#owl-hero .item .caption h1 span {$/;"	function	line:93
-#owl-hero .item .caption h6	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#owl-hero .item .caption h6 {$/;"	function	line:96
-#owl-hero .owl-dots	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#owl-hero .owl-dots {$/;"	function	line:100
-#owl-hero .owl-dots .owl-dot.active span	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#owl-hero .owl-dots .owl-dot.active span {$/;"	function	line:107
-#owl-hero .owl-dots .owl-dot span	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#owl-hero .owl-dots .owl-dot span {$/;"	function	line:110
-#owl-hero .owl-nav div	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#owl-hero .owl-nav div {$/;"	function	line:120
-#owl-hero .owl-nav .owl-prev	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#owl-hero .owl-nav .owl-prev {$/;"	function	line:126
-#owl-hero .owl-nav .owl-next	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#owl-hero .owl-nav .owl-next {$/;"	function	line:129
-#owl-hero .owl-nav .owl-prev	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#owl-hero .owl-nav .owl-prev,$/;"	function	line:132
-#owl-hero .owl-nav .owl-next	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#owl-hero .owl-nav .owl-next {$/;"	function	line:133
-#owl-hero:hover .owl-prev	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#owl-hero:hover .owl-prev {$/;"	function	line:150
-#owl-hero:hover .owl-next	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#owl-hero:hover .owl-next {$/;"	function	line:154
-#welcome	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#welcome {$/;"	function	line:161
-#welcome h2	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#welcome h2 {$/;"	function	line:165
-#welcome h2 span	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#welcome h2 span {$/;"	function	line:168
-#welcome img	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#welcome img {$/;"	function	line:171
-#services	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#services {$/;"	function	line:179
-#services h2	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#services h2 {$/;"	function	line:184
-#services p	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#services p {$/;"	function	line:188
-#services .services-box	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#services .services-box {$/;"	function	line:191
-#services .services-box .col-md-4	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#services .services-box .col-md-4 {$/;"	function	line:194
-#services .services-box .col-md-4 .media-left	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#services .services-box .col-md-4 .media-left,$/;"	function	line:197
-#services .services-box .col-md-4 .media-right	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#services .services-box .col-md-4 .media-right,$/;"	function	line:198
-#services .services-box .col-md-4 .media-body	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#services .services-box .col-md-4 .media-body {$/;"	function	line:199
-#services .services-box .col-md-4 .media-left p	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#services .services-box .col-md-4 .media-left p,$/;"	function	line:203
-#services .services-box .col-md-4 .media-right p	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#services .services-box .col-md-4 .media-right p,$/;"	function	line:204
-#services .services-box .col-md-4 .media-body p	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#services .services-box .col-md-4 .media-body p {$/;"	function	line:205
-#services .services-box .col-md-4 .media-left h3	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#services .services-box .col-md-4 .media-left h3,$/;"	function	line:208
-#services .services-box .col-md-4 .media-right h3	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#services .services-box .col-md-4 .media-right h3,$/;"	function	line:209
-#services .services-box .col-md-4 .media-body h3	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#services .services-box .col-md-4 .media-body h3 {$/;"	function	line:210
-#services .services-box .col-md-4 .media-left span	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#services .services-box .col-md-4 .media-left span,$/;"	function	line:215
-#services .services-box .col-md-4 .media-right span	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#services .services-box .col-md-4 .media-right span,$/;"	function	line:216
-#services .services-box .col-md-4 .media-body span	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#services .services-box .col-md-4 .media-body span {$/;"	function	line:217
-#portfolio	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#portfolio {$/;"	function	line:225
-#portfolio h2	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#portfolio h2 {$/;"	function	line:229
-#portfolio p	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#portfolio p {$/;"	function	line:232
-#portfolio .container-fluid	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#portfolio .container-fluid {$/;"	function	line:235
-#portfolio .container-fluid .col-lg-4	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#portfolio .container-fluid .col-lg-4 {$/;"	function	line:239
-#portfolio .portfolio-box	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#portfolio .portfolio-box {$/;"	function	line:243
-#portfolio .portfolio-box .portfolio-box-caption	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#portfolio .portfolio-box .portfolio-box-caption {$/;"	function	line:249
-#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {$/;"	function	line:264
-#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,$/;"	function	line:271
-#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {$/;"	function	line:272
-#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {$/;"	function	line:275
-#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#portfolio .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {$/;"	function	line:280
-#portfolio .portfolio-box:hover .portfolio-box-caption	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#portfolio .portfolio-box:hover .portfolio-box-caption {$/;"	function	line:283
-#work-process	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#work-process {$/;"	function	line:290
-#work-process .col-lg-3	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#work-process .col-lg-3 {$/;"	function	line:294
-#work-process h2	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#work-process h2 {$/;"	function	line:297
-#work-process h4	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#work-process h4 {$/;"	function	line:300
-#work-process span	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#work-process span {$/;"	function	line:304
-#fun-facts	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#fun-facts {$/;"	function	line:313
-#fun-facts .col-lg-3	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#fun-facts .col-lg-3 {$/;"	function	line:318
-#fun-facts h2	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#fun-facts h2 {$/;"	function	line:322
-#fun-facts p	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#fun-facts p {$/;"	function	line:326
-#fun-facts h4	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#fun-facts h4 {$/;"	function	line:329
-#fun-facts .number	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#fun-facts .number {$/;"	function	line:333
-#fun-facts span	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#fun-facts span {$/;"	function	line:339
-#team	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#team {$/;"	function	line:348
-#team h2	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#team h2 {$/;"	function	line:352
-#team .team	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#team .team {$/;"	function	line:355
-#team .team h4	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#team .team h4 {$/;"	function	line:359
-#team .team p	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#team .team p {$/;"	function	line:364
-#team .team a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#team .team a {$/;"	function	line:367
-#team .team a:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#team .team a:hover,$/;"	function	line:376
-#team .team a:focus	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#team .team a:focus,$/;"	function	line:377
-#team .team a:active	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#team .team a:active {$/;"	function	line:378
-#testimonials	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#testimonials {$/;"	function	line:385
-#testimonials h2	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#testimonials h2 {$/;"	function	line:397
-#testimonials p	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#testimonials p {$/;"	function	line:401
-#testimonials .item .quote	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#testimonials .item .quote {$/;"	function	line:404
-#testimonials .item .quote .right	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#testimonials .item .quote .right {$/;"	function	line:408
-#testimonials .item .quote .left	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#testimonials .item .quote .left {$/;"	function	line:413
-#testimonials .item h5	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#testimonials .item h5 {$/;"	function	line:418
-#testimonials .item h5 span	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#testimonials .item h5 span {$/;"	function	line:422
-#testimonials .owl-pagination .owl-page.active span	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#testimonials .owl-pagination .owl-page.active span {$/;"	function	line:426
-#testimonials .owl-pagination .owl-page span	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#testimonials .owl-pagination .owl-page span {$/;"	function	line:429
-#contact	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#contact {$/;"	function	line:443
-#contact h2	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#contact h2 {$/;"	function	line:447
-#contact form	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#contact form {$/;"	function	line:450
-#contact textarea	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#contact textarea {$/;"	function	line:454
-#map	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#map {$/;"	function	line:462
-footer	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^footer {$/;"	function	line:470
-footer h1	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^footer h1 {$/;"	function	line:475
-footer .social	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^footer .social {$/;"	function	line:479
-footer .social a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^footer .social a {$/;"	function	line:482
-footer .social a:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^footer .social a:hover,$/;"	function	line:491
-footer .social a:focus	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^footer .social a:focus,$/;"	function	line:492
-footer .social a:active	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^footer .social a:active {$/;"	function	line:493
-footer h6	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^footer h6 {$/;"	function	line:496
-.container	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.container{$/;"	function	line:501
-.navbar-toggle	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-toggle {$/;"	function	line:505
-@media (max-width: 1200px)	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^@media (max-width: 1200px) {$/;"	function	line:513
-.navbar-default	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default {$/;"	function	line:515
-.navbar-default .navbar-header	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-header {$/;"	function	line:518
-.navbar-default .navbar-header .navbar-brand	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-header .navbar-brand {$/;"	function	line:521
-.navbar-default .navbar-header .navbar-brand img	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-header .navbar-brand img {$/;"	function	line:524
-.navbar-default .nav-wrap	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .nav-wrap {$/;"	function	line:528
-.navbar-default .navbar-toggle	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-toggle {$/;"	function	line:531
-.navbar-default .navbar-toggle .icon-bar	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-toggle .icon-bar {$/;"	function	line:536
-.navbar-default .navbar-toggle:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-toggle:hover,$/;"	function	line:539
-.navbar-default .navbar-toggle:focus	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-toggle:focus,$/;"	function	line:540
-.navbar-default .navbar-toggle:active	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-toggle:active {$/;"	function	line:541
-.navbar-default .navbar-left	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-left,$/;"	function	line:544
-.navbar-default .navbar-right	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-right {$/;"	function	line:545
-.navbar-default .navbar-toggle	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-toggle {$/;"	function	line:548
-.navbar-default .navbar-collapse	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-collapse {$/;"	function	line:551
-.navbar-default .navbar-collapse.collapse	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-collapse.collapse {$/;"	function	line:554
-.navbar-default .navbar-nav	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-nav {$/;"	function	line:557
-.navbar-default .navbar-nav > li	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-nav > li {$/;"	function	line:561
-.navbar-default .collapse.in	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .collapse.in {$/;"	function	line:564
-.navbar-default .nav > li > a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .nav > li > a {$/;"	function	line:568
-.top-nav-collapse .nav > li > a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .top-nav-collapse .nav > li > a {$/;"	function	line:571
-#owl-hero h1	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  #owl-hero h1 {$/;"	function	line:576
-#owl-hero h6	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  #owl-hero h6 {$/;"	function	line:579
-#owl-hero .btn	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  #owl-hero .btn {$/;"	function	line:582
-#owl-hero .owl-nav	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  #owl-hero .owl-nav {$/;"	function	line:585
-#services h3	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  #services h3 {$/;"	function	line:590
-section h2	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  section h2 {$/;"	function	line:595
-#testimonials h5	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  #testimonials h5 {$/;"	function	line:599
 AddPopularityToCakes	/Users/Oscarin/Sites/Artorta/db/migrate/20160802055812_add_popularity_to_cakes.rb	/^class AddPopularityToCakes < ActiveRecord::Migration$/;"	class	line:1
 change	/Users/Oscarin/Sites/Artorta/db/migrate/20160802055812_add_popularity_to_cakes.rb	/^  def change$/;"	method	line:2	class:AddPopularityToCakes
 CakesController	/Users/Oscarin/Sites/Artorta/app/controllers/cakes_controller.rb	/^class CakesController < ApplicationController$/;"	class	line:3
@@ -200,82 +58,129 @@ set_cake	/Users/Oscarin/Sites/Artorta/app/controllers/cakes_controller.rb	/^  de
 cake_params	/Users/Oscarin/Sites/Artorta/app/controllers/cakes_controller.rb	/^  def cake_params$/;"	method	line:120	class:CakesController
 normalize_string	/Users/Oscarin/Sites/Artorta/app/controllers/cakes_controller.rb	/^  def normalize_string(a)$/;"	method	line:125	class:CakesController
 remove_stopwords	/Users/Oscarin/Sites/Artorta/app/controllers/cakes_controller.rb	/^  def remove_stopwords(tag_list)$/;"	method	line:129	class:CakesController
-* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^ * Any CSS and SCSS file within this directory, lib\/assets\/stylesheets, vendor\/assets\/stylesheets,$/;"	function	line:5
-dark-color	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^$dark-color: #24242a;$/;"	function	line:29
-light-color	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^$light-color: #fff;$/;"	function	line:30
-font-color	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^$font-color: #0d0d0d;$/;"	function	line:31
-link-color	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^$link-color: #636363;$/;"	function	line:32
-body	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^body {$/;"	function	line:37
-.sep	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.sep {$/;"	function	line:44
-.light-sep	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.light-sep {$/;"	function	line:51
-.thin-sep	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.thin-sep {$/;"	function	line:58
-.light-thin-sep	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.light-thin-sep {$/;"	function	line:65
-h1	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^h1 {$/;"	function	line:74
-h2	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^h2 {$/;"	function	line:80
-h3	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^h3 {$/;"	function	line:86
-h4	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^h4 {$/;"	function	line:91
-h5	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^h5 {$/;"	function	line:96
-h6	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^h6 {$/;"	function	line:101
-p	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^p {$/;"	function	line:107
-.btn-transparent	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-transparent {$/;"	function	line:115
-.btn-transparent:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-transparent:hover,$/;"	function	line:133
-.btn-transparent:focus	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-transparent:focus,$/;"	function	line:134
-.btn-transparent:active	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-transparent:active {$/;"	function	line:135
-.btn-light	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-light {$/;"	function	line:141
-.btn-light:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-light:hover,$/;"	function	line:159
-.btn-light:focus	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-light:focus,$/;"	function	line:160
-.btn-light:active	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-light:active {$/;"	function	line:161
-.btn-block	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-block {$/;"	function	line:167
-a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  a{$/;"	function	line:182
-.btn-block:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-block:hover,$/;"	function	line:190
-.btn-block:focus	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-block:focus,$/;"	function	line:191
-.btn-block:active	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-block:active {$/;"	function	line:192
-a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  a{$/;"	function	line:196
-.dark-bg	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.dark-bg {$/;"	function	line:205
-.light-bg	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.light-bg {$/;"	function	line:210
-.preloader	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.preloader {$/;"	function	line:218
-.preloader i	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.preloader i {$/;"	function	line:228
-.nav-space	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.nav-space{$/;"	function	line:246
-.flash	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.flash {$/;"	function	line:255
-#flash_error	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^#flash_error,$/;"	function	line:264
-#flash_alert	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^#flash_alert {$/;"	function	line:265
-#flash_success	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^#flash_success,$/;"	function	line:271
-#flash_notice	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^#flash_notice {$/;"	function	line:272
-.form-group	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.form-group {$/;"	function	line:282
-.form-control	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.form-control {$/;"	function	line:285
-.form-control.select	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.form-control.select{$/;"	function	line:294
-.nested-fields	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.nested-fields{$/;"	function	line:302
-.nopadding	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.nopadding {$/;"	function	line:305
-#search-form	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^#search-form {$/;"	function	line:314
-#search_field, #category_field	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  #search_field, #category_field {$/;"	function	line:319
-#search_field, #category_field, #submit_button	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  #search_field, #category_field, #submit_button {$/;"	function	line:324
-#search_field	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  #search_field{$/;"	function	line:330
-#category_field	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  #category_field {$/;"	function	line:333
-#search	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  #search {$/;"	function	line:336
-#category	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  #category {$/;"	function	line:345
-#submit_button	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  #submit_button {$/;"	function	line:358
-#search-button	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  #search-button{$/;"	function	line:361
-&:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^    &:hover,$/;"	function	line:376
-&:focus	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^    &:focus,$/;"	function	line:377
-&:active	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^    &:active {$/;"	function	line:378
-@media (max-width: 768px)	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^@media (max-width: 768px){$/;"	function	line:386
-#search-form	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  #search-form{$/;"	function	line:387
-#search_field, #category_field, #submit_button	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^    #search_field, #category_field, #submit_button{$/;"	function	line:388
-#search_field, #category_field	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^    #search_field, #category_field{$/;"	function	line:391
-.cake	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.cake {$/;"	function	line:401
-img	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  img{$/;"	function	line:403
-.cake_info	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.cake_info{$/;"	function	line:407
-a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  a{$/;"	function	line:408
-&:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^    &:hover{$/;"	function	line:410
-.cake-modal	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.cake-modal{$/;"	function	line:422
-img	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  img{$/;"	function	line:425
-.close	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  .close{$/;"	function	line:429
-&:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^    &:hover{$/;"	function	line:432
-.apple_pagination	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.apple_pagination {$/;"	function	line:446
-.apple_pagination a, .apple_pagination span	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  .apple_pagination a, .apple_pagination span {$/;"	function	line:452
-.apple_pagination .disabled	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  .apple_pagination .disabled {$/;"	function	line:454
-.apple_pagination .current	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  .apple_pagination .current {$/;"	function	line:456
-.apple_pagination a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  .apple_pagination a {$/;"	function	line:468
-.apple_pagination a:hover, .apple_pagination a:focus	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^    .apple_pagination a:hover, .apple_pagination a:focus {$/;"	function	line:471
 Cake	/Users/Oscarin/Sites/Artorta/app/models/cake.rb	/^class Cake < ActiveRecord::Base$/;"	class	line:1
 uniqueness_of_code	/Users/Oscarin/Sites/Artorta/app/models/cake.rb	/^  def uniqueness_of_code$/;"	method	line:24	class:Cake
+body	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^body {$/;"	function	line:26
+.sep	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.sep {$/;"	function	line:33
+.light-sep	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.light-sep {$/;"	function	line:40
+.thin-sep	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.thin-sep {$/;"	function	line:47
+.light-thin-sep	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.light-thin-sep {$/;"	function	line:54
+h1	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^h1 {$/;"	function	line:63
+h2	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^h2 {$/;"	function	line:69
+h3	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^h3 {$/;"	function	line:74
+h4	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^h4 {$/;"	function	line:79
+h5	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^h5 {$/;"	function	line:84
+h6	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^h6 {$/;"	function	line:90
+p	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^p {$/;"	function	line:96
+.btn-transparent	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-transparent {$/;"	function	line:104
+.btn-transparent:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-transparent:hover,$/;"	function	line:122
+.btn-transparent:focus	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-transparent:focus,$/;"	function	line:123
+.btn-transparent:active	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-transparent:active {$/;"	function	line:124
+.btn-light	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-light {$/;"	function	line:130
+.btn-light:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-light:hover,$/;"	function	line:148
+.btn-light:focus	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-light:focus,$/;"	function	line:149
+.btn-light:active	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-light:active {$/;"	function	line:150
+.btn-block	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-block {$/;"	function	line:156
+a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  a{$/;"	function	line:171
+.btn-block:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-block:hover,$/;"	function	line:179
+.btn-block:focus	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-block:focus,$/;"	function	line:180
+.btn-block:active	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.btn-block:active {$/;"	function	line:181
+a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  a{$/;"	function	line:185
+.dark-bg	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.dark-bg {$/;"	function	line:194
+.light-bg	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.light-bg {$/;"	function	line:199
+.preloader	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.preloader {$/;"	function	line:207
+.preloader i	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.preloader i {$/;"	function	line:216
+.nav-space	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.nav-space{$/;"	function	line:234
+.space	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.space{$/;"	function	line:239
+.flash	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.flash {$/;"	function	line:248
+#flash_error	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^#flash_error,$/;"	function	line:257
+#flash_alert	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^#flash_alert {$/;"	function	line:258
+#flash_success	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^#flash_success,$/;"	function	line:264
+#flash_notice	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^#flash_notice {$/;"	function	line:265
+.form-group	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.form-group {$/;"	function	line:275
+.form-control	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.form-control {$/;"	function	line:278
+.form-control.select	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.form-control.select{$/;"	function	line:287
+.form-group textarea	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.form-group textarea{$/;"	function	line:295
+.nested-fields	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.nested-fields{$/;"	function	line:299
+.nopadding	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.nopadding {$/;"	function	line:302
+#search-form	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^#search-form {$/;"	function	line:311
+#search_field, #category_field	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  #search_field, #category_field {$/;"	function	line:316
+#search_field, #category_field, #submit_button	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  #search_field, #category_field, #submit_button {$/;"	function	line:321
+#search_field	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  #search_field{$/;"	function	line:327
+#category_field	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  #category_field {$/;"	function	line:330
+#tag_list	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  #tag_list {$/;"	function	line:333
+#category	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  #category {$/;"	function	line:342
+#submit_button	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  #submit_button {$/;"	function	line:355
+#search-button	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  #search-button{$/;"	function	line:358
+&:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^    &:hover,$/;"	function	line:373
+&:focus	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^    &:focus,$/;"	function	line:374
+&:active	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^    &:active {$/;"	function	line:375
+@media (max-width: 768px)	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^@media (max-width: 768px){$/;"	function	line:383
+#search-form	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  #search-form{$/;"	function	line:384
+#search_field, #category_field, #submit_button	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^    #search_field, #category_field, #submit_button{$/;"	function	line:385
+#search_field, #category_field	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^    #search_field, #category_field{$/;"	function	line:388
+.cake	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.cake {$/;"	function	line:398
+img	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  img{$/;"	function	line:400
+.cake_info	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.cake_info{$/;"	function	line:404
+a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  a{$/;"	function	line:405
+&:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^    &:hover{$/;"	function	line:407
+.cake-modal	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.cake-modal{$/;"	function	line:419
+img	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  img{$/;"	function	line:422
+.close	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  .close{$/;"	function	line:426
+&:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^    &:hover{$/;"	function	line:429
+.apple_pagination	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.apple_pagination {$/;"	function	line:443
+.apple_pagination a, .apple_pagination span	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.apple_pagination a, .apple_pagination span {$/;"	function	line:450
+.apple_pagination .disabled	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.apple_pagination .disabled {$/;"	function	line:453
+.apple_pagination .current	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.apple_pagination .current {$/;"	function	line:456
+.apple_pagination a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.apple_pagination a {$/;"	function	line:469
+.apple_pagination a:hover, .apple_pagination a:focus	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.apple_pagination a:hover, .apple_pagination a:focus {$/;"	function	line:473
+html	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^html {$/;"	function	line:482
+body	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^body {$/;"	function	line:486
+footer	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^footer {$/;"	function	line:496
+ul	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^    ul {$/;"	function	line:505
+li	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^      li {$/;"	function	line:507
+a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^        a {$/;"	function	line:508
+&:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^          &:hover{$/;"	function	line:510
+.light-thin-sep	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^    .light-thin-sep {$/;"	function	line:517
+#minimap	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^#minimap {$/;"	function	line:522
+img	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  img {$/;"	function	line:527
+.clear	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^.clear {$/;"	function	line:532
+@media (max-width: 768px)	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^@media (max-width: 768px){$/;"	function	line:541
+body	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  body {$/;"	function	line:542
+footer	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/application.css.scss	/^  footer {$/;"	function	line:545
+.navbar-default	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default {$/;"	function	line:4
+.navbar-default .navbar-header	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .navbar-header {$/;"	function	line:9
+.navbar-default .nav-wrap	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .nav-wrap {$/;"	function	line:12
+.navbar-default .nav > li > a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .nav > li > a {$/;"	function	line:16
+.navbar-default .nav > li > a:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .nav > li > a:hover,$/;"	function	line:27
+.navbar-default .nav > li > a:focus	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .nav > li > a:focus,$/;"	function	line:28
+.navbar-default .nav > li > a:active	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .nav > li > a:active {$/;"	function	line:29
+.navbar-default .social-media	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .social-media {$/;"	function	line:32
+.navbar-default .social-media i	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .social-media i {$/;"	function	line:36
+.navbar-default .navbar-nav > .active > a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .navbar-nav > .active > a,$/;"	function	line:40
+.navbar-default .navbar-nav > .active > a:focus	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .navbar-nav > .active > a:focus,$/;"	function	line:41
+.navbar-default .navbar-nav > .active > a:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.navbar-default .navbar-nav > .active > a:hover {$/;"	function	line:42
+.img-responsive	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^.img-responsive{$/;"	function	line:47
+#map	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^#map {$/;"	function	line:53
+@media (max-width: 1200px)	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^@media (max-width: 1200px) {$/;"	function	line:60
+.navbar-default	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default {$/;"	function	line:62
+.navbar-default .navbar-header	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-header {$/;"	function	line:65
+.navbar-default .navbar-header .navbar-brand	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-header .navbar-brand {$/;"	function	line:68
+.navbar-default .navbar-header .navbar-brand img	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-header .navbar-brand img {$/;"	function	line:71
+.navbar-default .nav-wrap	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .nav-wrap {$/;"	function	line:75
+.navbar-default .navbar-toggle	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-toggle {$/;"	function	line:78
+.navbar-default .navbar-toggle .icon-bar	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-toggle .icon-bar {$/;"	function	line:83
+.navbar-default .navbar-toggle:hover	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-toggle:hover,$/;"	function	line:86
+.navbar-default .navbar-toggle:focus	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-toggle:focus,$/;"	function	line:87
+.navbar-default .navbar-toggle:active	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-toggle:active {$/;"	function	line:88
+.navbar-default .navbar-left	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-left,$/;"	function	line:91
+.navbar-default .navbar-right	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-right {$/;"	function	line:92
+.navbar-default .navbar-toggle	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-toggle {$/;"	function	line:95
+.navbar-default .navbar-collapse	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-collapse {$/;"	function	line:98
+.navbar-default .navbar-collapse.collapse	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-collapse.collapse {$/;"	function	line:101
+.navbar-default .navbar-nav	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-nav {$/;"	function	line:104
+.navbar-default .navbar-nav > li	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .navbar-nav > li {$/;"	function	line:108
+.navbar-default .collapse.in	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .collapse.in {$/;"	function	line:111
+.navbar-default .nav > li > a	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-default .nav > li > a {$/;"	function	line:115
+@media (min-width: 1200px)	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^@media (min-width: 1200px){$/;"	function	line:119
+.navbar-nav	/Users/Oscarin/Sites/Artorta/app/assets/stylesheets/rise.css	/^  .navbar-nav{$/;"	function	line:120
