@@ -22,6 +22,7 @@ class Ability
       can :manage, :all
     else
       can :read, [Cake, WeddingTopping, Press, Company]
+      can [:index, :new], Delivery
       can [:catalog, :search, :cakes_tagged_with], Cake
     end
   end

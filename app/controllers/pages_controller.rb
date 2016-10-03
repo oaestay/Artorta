@@ -16,6 +16,9 @@ class PagesController < ApplicationController
   def us
   end
 
+  def delivery
+  end
+
   def cakemapping
   end
 

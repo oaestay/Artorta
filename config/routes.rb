@@ -1,15 +1,8 @@
 Rails.application.routes.draw do
-  resources :companies
-  resources :presses
-  resources :wedding_toppings
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+  resources :companies, :path => 'empresas'
+  resources :presses, :path => 'prensa'
+  resources :wedding_toppings, :path => 'cupulas'
+  resources :deliveries, :path => 'despacho'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
@@ -59,7 +52,7 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
   devise_for :users
-  resources :cakes do
+  resources :cakes, :path => 'productos' do
     get :autocomplete_tag_name, :on => :collection
   end
 

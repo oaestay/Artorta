@@ -1,0 +1,31 @@
+= simple_form_for @delivery do |f|
+  .row.text-center
+    .col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-3
+      = f.input :first_name, label: "Nombre"
+      = f.input :last_name, label: "Apellido"
+      = f.input :kind, label: "Tipo de Producto", collection: ['Torta de Novios', 'Otro producto'], include_blank: false
+      = f.input :address, label: "Dirección"
+      = f.input :province, label: "Comuna", collection: []
+      = f.input :references, label: "Referencias"
+      = f.input :phone, label: "Teléfono", input_html: { :onkeyup => 'this.value = this.value.replace(/[^\0-9]/, \'\')' }, hint: '(Ej: 990948338)'
+      = f.input :cellphone, label: "Celular", input_html: { :onkeyup => 'this.value = this.value.replace(/[^\0-9]/, \'\')' }
+      = f.input :datetime, label: "Hora máxima para la entrega"
+      .clearfix
+      = f.submit "Enviar", class: 'btn-block form-button'
+:javascript
+  (function(){
+    var bOptions = {"Torta de Novios":['', 'Algarrobo', 'Buin', 'Calera de Tango', 'Casa Blanca', 'Casablanca', 'Cerrillos', 'Cerro Navia', 'Chicureo', 'Colina', 'Con Con', 'Conchalí', 'El Bosque', 'El Monte', 'Estación Central', 'Huechuraba', 'Independencia', 'Isla de Maipo', 'La Cisterna', 'La Florida', 'La Granja', 'La Pintana', 'La Reina', 'Lampa', 'Las Condes', 'Lo Barnechea', 'Lo Espejo', 'Lo Prado', 'Lomas de lo Aguirre', 'Macul', 'Maipú', 'Melipilla', 'Ñuñoa', 'Olmué', 'Padre Hurtado', 'Paine', 'Pedro Aguirre Cerda', 'Peñaflor', 'Peñalolén', 'Pirque', 'Pudahuel', 'Puente Alto', 'Quilicura', 'Quinta Normal', 'Rancagua', 'Recoleta', 'Renca', 'San Antonio', 'San Bernardo', 'San Joaquín', 'San José de Maipo', 'San Miguel', 'San Ramón', 'Santiago centro', 'Talagante', 'Valparaío', 'Vitacura'], "Otro producto":['', 'Recoleta', 'Independencia', 'Conchalí', 'Santiago Centro', 'Providencia', 'Huechuraba', 'Vitacura', 'Las Condes', 'Ñuñoa', 'La Reina', 'Macul', 'Peñalolén', 'Lo Barnechea']};
+    var A = document.getElementById('delivery_kind');
+    var B = document.getElementById('delivery_province');
+    A.onchange = function(){
+      B.length = 0;
+      var _val = this.options[this.selectedIndex].value;
+      for ( var i in bOptions[_val]){
+        var op = document.createElement('option');
+        op.value = bOptions[_val][i];
+        op.text = bOptions[_val][i];
+        B.appendChild(op);
+      }
+    };
+    A.onchange();
+  })();
