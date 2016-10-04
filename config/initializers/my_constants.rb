@@ -27,6 +27,7 @@ MENU_DECORADAS = {
   "graduacion" => "Graduación",
   "festividades" => "Festividades",
   "despedida_solteros" => "Despedida de Solteros",
+  "vehiculos" => "Vehículos",
   "otros" => "Otros",
 }
 
