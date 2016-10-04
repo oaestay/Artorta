@@ -3,18 +3,50 @@
     .col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-3
       = f.input :first_name, label: "Nombre"
       = f.input :last_name, label: "Apellido"
-      = f.input :kind, label: "Tipo de Producto", collection: ['Torta de Novios', 'Otro producto'], include_blank: false
+      = f.input :mail, label: "Email"
+      = f.input :phone, label: "Teléfono", input_html: { :onkeyup => 'this.value = this.value.replace(/[^\0-9]/, \'\')' }, hint: '(Ej: 227353947)'
+      = f.input :cellphone, label: "Celular", input_html: { :onkeyup => 'this.value = this.value.replace(/[^\0-9]/, \'\')' }, hint: '(Ej: 990948338)'
       = f.input :address, label: "Dirección"
-      = f.input :province, label: "Comuna", collection: []
+      = f.input :province, label: "Comuna", collection: ['Recoleta', 'Independencia', 'Conchalí', 'Santiago Centro', 'Providencia', 'Huechuraba', 'Vitacura', 'Las Condes', 'Ñuñoa', 'La Reina', 'Macul', 'Peñalolén', 'Lo Barnechea']
       = f.input :references, label: "Referencias"
-      = f.input :phone, label: "Teléfono", input_html: { :onkeyup => 'this.value = this.value.replace(/[^\0-9]/, \'\')' }, hint: '(Ej: 990948338)'
-      = f.input :cellphone, label: "Celular", input_html: { :onkeyup => 'this.value = this.value.replace(/[^\0-9]/, \'\')' }
-      = f.input :datetime, label: "Hora máxima para la entrega"
+      = f.input :date, label: "Fecha del despacho"
+      #terms_and_conditions_box
+        %p
+          El horario de despacho es de
+          %b LUNES A VIERNES de 10:00 a 18:00.
+        %p
+          Por la gran cantidad de pedidos
+          %b NO PODEMOS DAR UNA HORA DE ENTREGA.
+        %p
+          Si llegamos a la dirección de entrega y no encontramos a nadie quien reciba la
+          torta, la dirección es incorrecta o bien la torta no se encuentra cancelada en su
+          totalidad, se nos faculta a llevarnos de vuelta la torta a la pastelería para que el
+          cliente por sus medios realice su retiro en la pastelería sin derecho a la devolución
+          de lo cancelado por concepto de despacho, el cual ya se realizó.
+        %p
+          Los despachos son a domicilios claros, oficinas con estacionamiento propio y
+          no entramos al
+          %b CENTRO DE SANTIAGO (PASEOS PEATONALES).
+        %p
+          No nos juntamos en algún lugar en particular con los clientes, solo vamos a
+          direcciones fijas. Tampoco llevamos a locales en malls.
+        %p
+          Si el cliente pide dejar la torta en conserjería o un vecino, la pastelería no se
+          hará responsables de las condiciones en que se encuentre la torta.
+        %p
+          Si pides tú torta con despacho debes cancelarla en su totalidad más el costo de
+          despacho al momento de realizar tú pedido. El chofer no recibe dinero.
+        %p
+          El valor de despacho de tortas que no sean de novios, es de $5.000, y
+          entregamos solo en las siguientes comunas:
+        %p
+          %b Recoleta - Independencia - Conchalí - Santiago Centro - Providencia - Huechuraba - Vitacura - Las Condes - Ñuñoa - La Reina - Macul - Peñalolén - Lo Barnechea
+      = f.input :terms_and_conditions, as: :boolean, label: "Acepto los Términos y Condiciones"
       .clearfix
-      = f.submit "Enviar", class: 'btn-block form-button'
+      = f.submit "Enviar", class: 'btn-block form-button', id: 'submit_button'
 :javascript
-  (function(){
-    var bOptions = {"Torta de Novios":['', 'Algarrobo', 'Buin', 'Calera de Tango', 'Casa Blanca', 'Casablanca', 'Cerrillos', 'Cerro Navia', 'Chicureo', 'Colina', 'Con Con', 'Conchalí', 'El Bosque', 'El Monte', 'Estación Central', 'Huechuraba', 'Independencia', 'Isla de Maipo', 'La Cisterna', 'La Florida', 'La Granja', 'La Pintana', 'La Reina', 'Lampa', 'Las Condes', 'Lo Barnechea', 'Lo Espejo', 'Lo Prado', 'Lomas de lo Aguirre', 'Macul', 'Maipú', 'Melipilla', 'Ñuñoa', 'Olmué', 'Padre Hurtado', 'Paine', 'Pedro Aguirre Cerda', 'Peñaflor', 'Peñalolén', 'Pirque', 'Pudahuel', 'Puente Alto', 'Quilicura', 'Quinta Normal', 'Rancagua', 'Recoleta', 'Renca', 'San Antonio', 'San Bernardo', 'San Joaquín', 'San José de Maipo', 'San Miguel', 'San Ramón', 'Santiago centro', 'Talagante', 'Valparaío', 'Vitacura'], "Otro producto":['', 'Recoleta', 'Independencia', 'Conchalí', 'Santiago Centro', 'Providencia', 'Huechuraba', 'Vitacura', 'Las Condes', 'Ñuñoa', 'La Reina', 'Macul', 'Peñalolén', 'Lo Barnechea']};
+  /*(function(){
+    var bOptions = {"Torta de Novios":['', 'Algarrobo', 'Buin', 'Calera de Tango', 'Casa Blanca', 'Casablanca', 'Cerrillos', 'Cerro Navia', 'Chicureo', 'Colina', 'Con Con', 'Conchalí', 'El Bosque', 'El Monte', 'Estación Central', 'Huechuraba', 'Independencia', 'Isla de Maipo', 'La Cisterna', 'La Florida', 'La Granja', 'La Pintana', 'La Reina', 'Lampa', 'Las Condes', 'Lo Barnechea', 'Lo Espejo', 'Lo Prado', 'Lomas de lo Aguirre', 'Macul', 'Maipú', 'Melipilla', 'Ñuñoa', 'Olmué', 'Padre Hurtado', 'Paine', 'Pedro Aguirre Cerda', 'Peñaflor', 'Peñalolén', 'Pirque', 'Pudahuel', 'Puente Alto', 'Quilicura', 'Quinta Normal', 'Rancagua', 'Recoleta', 'Renca', 'San Antonio', 'San Bernardo', 'San Joaquín', 'San José de Maipo', 'San Miguel', 'San Ramón', 'Santiago centro', 'Talagante', 'Valparaío', 'Vitacura'], "Tortas Decoradas, Cupcakes u otro":['', 'Recoleta', 'Independencia', 'Conchalí', 'Santiago Centro', 'Providencia', 'Huechuraba', 'Vitacura', 'Las Condes', 'Ñuñoa', 'La Reina', 'Macul', 'Peñalolén', 'Lo Barnechea']};
     var A = document.getElementById('delivery_kind');
     var B = document.getElementById('delivery_province');
     A.onchange = function(){
@@ -28,4 +60,12 @@
       }
     };
     A.onchange();
-  })();
+  })();*/
+  if(!$('#delivery_terms_and_conditions').is(':checked'))
+    $('input[type="submit"]').prop('disabled', true);
+  $('#delivery_terms_and_conditions').change(function(){
+    if($('#delivery_terms_and_conditions').is(':checked'))
+      $('input[type="submit"]').prop('disabled', false);
+    else
+      $('input[type="submit"]').prop('disabled', true);
+  });

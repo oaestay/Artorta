@@ -19,7 +19,9 @@ class DeliveriesController < ApplicationController
     if @delivery.save
       respond_to do |format|
         flash[:notice] = "Despacho creado correctamente"
-        format.html { redirect_to root_path }
+        DeliveryMailer.delivery_email(@delivery).deliver
+        DeliveryMailer.delivery_email_admin(@delivery).deliver
+        format.html { redirect_to deliveries_url }
       end
     else
       render :new
@@ -54,7 +56,7 @@ class DeliveriesController < ApplicationController
 
   def delivery_params
     params.require(:delivery)
-      .permit(:address, :province, :references, :first_name, :last_name, :phone, :cellphone, :datetime)
+      .permit(:address, :province, :references, :first_name, :last_name, :phone, :cellphone, :date, :terms_and_conditions, :mail)
   end
 
 end
