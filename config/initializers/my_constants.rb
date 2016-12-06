@@ -1,3 +1,4 @@
+# coding: utf-8
 require 'ostruct'
 
 STOP_WORDS = ['', 'un', 'una', 'unas', 'unos', 'uno', 'sobre', 'de', 'a', 'o',
@@ -25,7 +26,7 @@ MENU_DECORADAS = {
   "deportes" => "Deportes",
   "oficios" => "Oficios",
   "graduacion" => "Graduación",
-  "festividades" => "Festividades",
+  "navidad" => "Navidad",
   "despedida_solteros" => "Despedida de Solteros",
   "vehiculos" => "Vehículos",
   "halloween" => "Halloween",
