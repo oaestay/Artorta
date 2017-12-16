@@ -1,22 +1,10 @@
-.col-sm-4.col-sm-offset-1.hidden-xs
-  = image_tag("novios_20.png", class: "promo-image")
-  / #carrousel
-  /   %span.active
-  /     = image_tag("carrousel_0.png")
-  /   %span
-  /     = image_tag("carrousel_1.png")
-  /   %span
-  /     = image_tag("carrousel_2.png")
-  /   %span
-  /     = image_tag("carrousel_3.png")
-  /   %span
-  /     = image_tag("carrousel_4.png")
-  /   %span
-  /     = image_tag("carrousel_5.png")
+.col-sm-6.col-lg-4.col-lg-offset-1
+  .space
+  = image_tag("big_promo_1.jpg", class: "promo-image")
 #welcome_info.col-xs-12.col-sm-6
   .space
   %p{style: "font-weight: 800;"}
-    Hemos vuelto de vacaciones y empezamos con temporada alta, pida con anticipación, Art Torta.
+    Por falla técnica, estaremos tomando pedidos sólo por email a info@artorta.cl y por celular, al número +56978093790, no dude en mandar mensajes por Whatsapp, o llamar directamente. Lamentamos los inconvenientes, ArtTorta
   .space
   %p
     Pastelería Art-Torta se especializa en
@@ -31,14 +19,31 @@
     = link_to('mayor variedad de tortas', catalog_url)
     que puedas encontrar y disfruta de nuestros
     = link_to('nuevos modelos', catalog_url) + "."
-  .col-sm-12.col-md-6
-    %p.text-center
-      = link_to(image_tag("button_0.jpg"), companies_url, class: "index-button")
-    .space
-  .col-sm-12.col-md-6
-    %p.text-center
-      = link_to(image_tag("button_1.jpg"), wedding_toppings_url, class: "index-button")
-    .space
+  .hidden-xs.col-sm-6
+    = image_tag("big_promo_2.jpg", class: "promo-image")
+  .hidden-xs.col-sm-6
+    = image_tag("big_promo_3.jpg", class: "promo-image")
+.clearfix
+.col-xs-12.col-sm-4.col-lg-2.col-lg-offset-1
+  .space
+  %p.text-center
+    = link_to(image_tag("button_0.jpg"), companies_url, class: "index-button")
+.col-xs-12.col-sm-4.col-lg-2
+  .space
+  %p.text-center
+    = link_to(image_tag("button_1.jpg"), wedding_toppings_url, class: "index-button")
+.col-xs-12.col-sm-4.col-lg-2
+  .space
+  %p.text-center
+    = link_to(image_tag("button_2.jpg"), cakes_url(menu: "cupcakes"), class: "index-button")
+.col-xs-12.col-sm-4.col-lg-2
+  .space
+  %p.text-center
+    = link_to(image_tag("button_3.jpg"), cakes_url(menu: "tradicionales"), class: "index-button")
+.col-xs-12.col-sm-4.col-lg-2
+  .space
+  %p.text-center
+    = link_to(image_tag("button_4.jpg"), subcategory_url(menu: "novios", subcategory: "cupcakes_minitortas"), class: "index-button")
 .clearfix
 .clear
 .space
