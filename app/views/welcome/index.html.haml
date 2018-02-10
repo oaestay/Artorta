@@ -1,25 +1,15 @@
-.col-sm-6.col-lg-4.col-lg-offset-1
-  .space
-  = image_tag("big_promo_1.jpg", class: "promo-image")
-#welcome_info.col-xs-12.col-sm-6
-  .space
-  %p
-    Pastelería Art-Torta se especializa en
-    = link_to('tortas decoradas', cakes_url(menu: "decoradas"))
-    ,
-    = link_to('tortas de novios', cakes_url(menu: "novios"))
-    y
-    = link_to('cupcakes', cakes_url(menu: "cupcakes"))
-    \. Nuestro objetivo es crear en tu torta un modelo único y personalizado. Las grandes Empresas, los canales de televisión y sobre todo la gran cantidad de clientes que nos han elegido durante estos 16 años, nos han convertido en la pastelería de los grandes eventos de nuestro país.
-  %p
-    Visita la
-    = link_to('mayor variedad de tortas', catalog_url)
-    que puedas encontrar y disfruta de nuestros
-    = link_to('nuevos modelos', catalog_url) + "."
-  .hidden-xs.col-sm-6
-    = image_tag("big_promo_2.jpg", class: "promo-image")
-  .hidden-xs.col-sm-6
-    = image_tag("big_promo_3.jpg", class: "promo-image")
+.col-xs-12.col-sm-12
+  %h1.text-center{ :style => "color: #98122f; font-weight: 600;" } REMATE ANIVERSARIO
+  %h2.text-center{ :style => "color: #98122f; font-weight: 600;" } SÓLO 24 HORAS
+.row
+  .col-xs-12.col-sm-5.col-sm-offset-1
+    = image_tag("remate_1.jpg", class: 'promo-image max-width')
+  .col-xs-12.col-sm-5
+    = image_tag("remate_2.jpg", class: 'promo-image max-width')
+.clearfix
+.row
+  .col-xs-12.col-sm-10.col-sm-offset-1
+    %p.text-center{ :style => "color: #98122f; font-size: 1.5em" } *Ambas ofertas estan disponibles desde el 10 hasta el 12 de Febrero, ¡cuando sorprenderemos con una nueva oferta!
 .clearfix
 .col-xs-12.col-sm-4.col-lg-2.col-lg-offset-1
   .space
@@ -40,7 +30,7 @@
 .col-xs-12.col-sm-4.col-lg-2
   .space
   %p.text-center
-    = link_to(image_tag("button_4.jpg"), subcategory_url(menu: "novios", subcategory: "cupcakes_minitortas"), class: "index-button")
+    = link_to(image_tag("button_press.jpg"), presses_url, class: "index-button")
 .clearfix
 .clear
 .space
