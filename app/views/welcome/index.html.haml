@@ -1,15 +1,8 @@
-.col-xs-12.col-sm-12
-  %h1.text-center{ :style => "color: #98122f; font-weight: 600;" } REMATE ANIVERSARIO
-  %h2.text-center{ :style => "color: #98122f; font-weight: 600;" } SÓLO 24 HORAS
 .row
   .col-xs-12.col-sm-5.col-sm-offset-1
-    = image_tag("remate_1.jpg", class: 'promo-image max-width')
+    = image_tag("big_promo_conejito.jpg", class: 'promo-image max-width')
   .col-xs-12.col-sm-5
-    = image_tag("remate_2.jpg", class: 'promo-image max-width')
-.clearfix
-.row
-  .col-xs-12.col-sm-10.col-sm-offset-1
-    %p.text-center{ :style => "color: #98122f; font-size: 1.5em" } *Ambas ofertas estan disponibles desde el 10 hasta el 12 de Febrero, ¡cuando sorprenderemos con una nueva oferta!
+    = link_to(image_tag("big_promo_league.jpg", class: 'promo-image max-width'), cakes_url)
 .clearfix
 .col-xs-12.col-sm-4.col-lg-2.col-lg-offset-1
   .space
