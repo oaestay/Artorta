@@ -10,9 +10,11 @@ STOP_WORDS = ['', 'un', 'una', 'unas', 'unos', 'uno', 'sobre', 'de', 'a', 'o',
   'con', 'entre', 'sin', 'de', 'del', 'mi', '_']
 
 MENU_DECORADAS = {
+  "unicornios" => "Unicornios",
   "ninas" => "Niñas",
   "ninos" => "Niños",
   "primeros_anitos" => "Primeros Añitos",
+  "emojis" => "Emojis",
   "bautizo" => "Bautizo",
   "baby_shower" => "Baby Shower",
   "primera_comunion" => "Primera Comunión",
@@ -34,27 +36,38 @@ MENU_DECORADAS = {
 }
 
 MENU_NOVIOS = {
-  "novios_pequenos" => "Novios Pequeños",
-  "tematicas" => "Temáticas",
-  "clasicas" => "Clásicas",
-  "flores" => "Flores",
   "vintage" => "Vintage",
-  "modernas" => "Modernas",
+  "tematicas" => "Temáticas",
+  "flores" => "Flores",
   "sombras" => "Sombras",
-  "castillos" => "Castillos y Carruajes",
+  "modernas" => "Modernas",
   "chile_lugares" => "Chile y el mundo",
   "musica" => "Música",
   "cuadradas" => "Cuadradas",
   "cupcakes_minitortas" => "Cupcakes y Minitortas",
+  "cupulas" => "Cúpulas",
 }
 
 MENU_TRADICIONALES = {
   "bizcocho" => "Bizcocho",
   "merengue" => "Merengue",
   "panqueque" => "Panqueque",
+  "honey_cakes" => "Honey Cakes",
 }
 
 MENU_CUPCAKES = {
-  "ninos" => "Niños",
-  "eventos" => "Eventos"
+  "tradicionales" => "Tradicionales",
+  "decorados" => "Decorados",
+  "novios" => "Novios",
 }
+
+MENU_COCTEL = {
+  "panqueque" => "Panqueque",
+  "pies" => "Pies",
+  "piesdulces_chilenos" => "Piesdulces Chilenos",
+}
+
+MENU_POSTRES = {}
+MENU_PIES = {}
+MENU_CHOCOLATERIA = {}
+MENU_GALLETONES = {}

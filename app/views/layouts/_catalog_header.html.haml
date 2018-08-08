@@ -1,13 +1,23 @@
 %h1= @title
 %hr.sep
-.col-sm-3
+.col-sm-4
   %span.btn-block= link_to "Tortas Decoradas", cakes_url(menu: "decoradas")
-.col-sm-3
+.col-sm-4
   %span.btn-block= link_to "Tortas de Novios", cakes_url(menu: "novios")
-.col-sm-3
+.col-sm-4
   %span.btn-block= link_to "Tortas Tradicionales", cakes_url(menu: "tradicionales")
-.col-sm-3
+.col-sm-4
   %span.btn-block= link_to "Cupcakes", cakes_url(menu: "cupcakes")
+.col-sm-4
+  %span.btn-block= link_to "Cóctel", cakes_url(menu: "coctel")
+.col-sm-4
+  %span.btn-block= link_to "Postres", cakes_url(menu: "postres")
+.col-sm-4
+  %span.btn-block= link_to "Pies y Brazos", cakes_url(menu: "pies")
+.col-sm-4
+  %span.btn-block= link_to "Chocolatería", cakes_url(menu: "chocolateria")
+.col-sm-4
+  %span.btn-block= link_to "Galletones", cakes_url(menu: "galletones")
 .clearfix
 - if can? :create, Cake
   .space

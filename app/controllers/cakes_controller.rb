@@ -33,6 +33,26 @@ class CakesController < ApplicationController
         @cakes = Cake.cupcakes
         @title = "Cupcakes"
         @submenu = MENU_CUPCAKES
+      when "coctel"
+        @cakes = Cake.coctel
+        @title = "Cóctel"
+        @submenu = MENU_COCTEL
+      when "postres"
+        @cakes = Cake.postres
+        @title = "Postres"
+        @submenu = MENU_POSTRES
+      when "pies"
+        @cakes = Cake.pies
+        @title = "Pies y Brazos"
+        @submenu = MENU_PIES
+      when "chocolateria"
+        @cakes = Cake.chocolateria
+        @title = "Chocolatería"
+        @submenu = MENU_CHOCOLATERIA
+      when "galletones"
+        @cakes = Cake.galletones
+        @title = "Galletones"
+        @submenu = MENU_GALLETONES
       else
         params.delete :menu
         redirect_to catalog_url
@@ -60,6 +80,16 @@ class CakesController < ApplicationController
       @cakes = Cake.tradicionales.tagged_with(@tags, :any => true)
     when "cupcakes"
       @cakes = Cake.cupcakes.tagged_with(@tags, :any => true)
+    when "coctel"
+      @cakes = Cake.coctel.tagged_with(@tags, :any => true)
+    when "postres"
+      @cakes = Cake.postres.tagged_with(@tags, :any => true)
+    when "pies"
+      @cakes = Cake.pies.tagged_with(@tags, :any => true)
+    when "chocolateria"
+      @cakes = Cake.chocolateria.tagged_with(@tags, :any => true)
+    when "galletones"
+      @cakes = Cake.galletones.tagged_with(@tags, :any => true)
     end
     @cakes = @cakes.sort_by { |o| -(@tags & o.tag_list).length }.paginate(:page => params[:page], :per_page => 24)
   end
@@ -85,6 +115,10 @@ class CakesController < ApplicationController
         @cakes = Cake.cupcakes
         @title = MENU_CUPCAKES[@subcategory]
         @submenu = MENU_CUPCAKES
+      when "coctel"
+        @cakes = Cake.coctel
+        @title = MENU_COCTEL[@subcategory]
+        @submenu = MENU_COCTEL
       else
         params.delete :menu
         redirect_to catalog_url

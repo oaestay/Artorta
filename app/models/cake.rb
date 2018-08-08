@@ -19,6 +19,11 @@ class Cake < ActiveRecord::Base
   scope :novios, -> { where("category = 'novios'") }
   scope :tradicionales, -> { where("category = 'tradicionales'") }
   scope :cupcakes, -> { where("category = 'cupcakes'") }
+  scope :coctel, -> { where("category = 'coctel'") }
+  scope :postres, -> { where("category = 'postres'") }
+  scope :pies, -> { where("category = 'pies'") }
+  scope :chocolateria, -> { where("category = 'chocolateria'") }
+  scope :galletones, -> { where("category = 'galletones'") }
 
 
   def uniqueness_of_code
