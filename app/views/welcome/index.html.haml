@@ -1,8 +1,10 @@
 .row
-  .col-xs-12.col-sm-5.col-sm-offset-1
-    = image_tag("big_promo_conejito.jpg", class: 'promo-image max-width')
-  .col-xs-12.col-sm-5
-    = link_to(image_tag("big_promo_league.jpg", class: 'promo-image max-width'), cakes_url)
+  .col-xs-12.col-sm-4
+    = link_to(image_tag("promo_decoradas.jpg", class: 'promo-image max-width'), cakes_url(menu: "decoradas"))
+  .col-xs-12.col-sm-4
+    = link_to(image_tag("promo_cupcakes.jpg", class: 'promo-image max-width'), cakes_url(menu: "cupcakes"))
+  .col-xs-12.col-sm-4
+    = link_to(image_tag("promo_novios.jpg", class: 'promo-image max-width'), cakes_url(menu: "novios"))
 .clearfix
 .col-xs-12.col-sm-4.col-lg-2.col-lg-offset-1
   .space
