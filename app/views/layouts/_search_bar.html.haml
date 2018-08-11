@@ -3,7 +3,7 @@
     #search_field
       = autocomplete_field_tag('tag_list', '', autocomplete_tag_name_cakes_path, :size => 75, 'data-delimiter' => ' ', :multiple => true)
     #category_field
-      = select_tag :category, options_for_select([['Todos', 'all'], ['Tortas Decoradas', 'decoradas'], ['Tortas de Novios', 'novios'], ['Tortas Tradicionales', 'tradicionales'], ['Cupcakes', 'cupcakes']]), :label => false, include_blank: false, class: "select"
+      = select_tag :category, options_for_select([['Todos', 'all'], ['Tortas Decoradas', 'decoradas'], ['Tortas de Novios', 'novios'], ['Tortas Tradicionales', 'tradicionales'], ['Cupcakes', 'cupcakes'], ['Cóctel', 'coctel'], ['Postres', 'postres'], ['Pies y Brazos', 'pies'], ['Chocolatería', 'chocolateria'], ['Galletones', 'galletones']]), :label => false, include_blank: false, class: "select"
     #submit_button
       = submit_tag "Buscar", id: "search-button"
 .clearfix

@@ -195,8 +195,11 @@ class CakesController < ApplicationController
   end
 
   def cake_params
-    params.require(:cake)
-      .permit(:code, :name, :category, :minimum_portions, :portion_price, :includes_couple, :warranty, :image, :popularity, prices_attributes: [:id, :portions, :price, :_destroy], tag_list: [])
+    params.require(:cake).permit(
+      :code, :name, :description, :category, :minimum_portions, :portion_price, :includes_couple,
+      :warranty, :image, :popularity,
+      prices_attributes: [:id, :portions, :price, :_destroy], tag_list: []
+    )
   end
 
   def normalize_string(a)
