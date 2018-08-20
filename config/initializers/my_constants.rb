@@ -40,6 +40,7 @@ MENU_NOVIOS = {
   "tematicas" => "Temáticas",
   "flores" => "Flores",
   "sombras" => "Sombras",
+  "novios_pequenos" => "Novios Pequeños",
   "modernas" => "Modernas",
   "chile_lugares" => "Chile y el mundo",
   "musica" => "Música",
@@ -56,6 +57,13 @@ MENU_TRADICIONALES = {
 }
 
 MENU_CUPCAKES = {
+  "bautizo" => "Bautizo",
+  "primeros_anitos" => "Primeros Añitos",
+  "ninas" => "Niñas",
+  "ninos" => "Niños",
+  "enamorados" => "Enamorados",
+  "ellas" => "Ellas",
+  "ellos" => "Ellos",
   "tradicionales" => "Tradicionales",
   "decorados" => "Decorados",
   "novios" => "Novios",
