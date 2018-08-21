@@ -57,6 +57,8 @@ MENU_TRADICIONALES = {
 }
 
 MENU_CUPCAKES = {
+  "tradicionales" => "Tradicionales",
+  "novios" => "Novios",
   "bautizo" => "Bautizo",
   "primeros_anitos" => "Primeros Añitos",
   "ninas" => "Niñas",
@@ -64,9 +66,7 @@ MENU_CUPCAKES = {
   "enamorados" => "Enamorados",
   "ellas" => "Ellas",
   "ellos" => "Ellos",
-  "tradicionales" => "Tradicionales",
-  "decorados" => "Decorados",
-  "novios" => "Novios",
+  "navidad" => "Navidad",
 }
 
 MENU_COCTEL = {
