@@ -66,6 +66,7 @@ MENU_CUPCAKES = {
   "enamorados" => "Enamorados",
   "ellas" => "Ellas",
   "ellos" => "Ellos",
+  "juegos" => "Juegos",
   "navidad" => "Navidad",
 }
 
