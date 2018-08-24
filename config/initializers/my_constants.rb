@@ -43,10 +43,9 @@ MENU_NOVIOS = {
   "novios_pequenos" => "Novios Pequeños",
   "modernas" => "Modernas",
   "chile_lugares" => "Chile y el mundo",
+  "mitades" => "Mitades",
   "musica" => "Música",
-  "cuadradas" => "Cuadradas",
   "cupcakes_minitortas" => "Cupcakes y Minitortas",
-  "cupulas" => "Cúpulas",
 }
 
 MENU_TRADICIONALES = {
