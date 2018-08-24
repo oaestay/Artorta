@@ -63,6 +63,5 @@ Rails.application.routes.draw do
   get 'sabores'      =>   'pages#flavours', as: :flavours
   get 'ubicacion'    =>   'pages#location', as: :location
   get 'nosotros'     =>   'pages#us', as: :us
-  get 'cakemapping'  =>   'pages#cakemapping', as: :cakemapping
   get 'mail_test'    =>   'pages#mail_test', as: :mail_test
 end

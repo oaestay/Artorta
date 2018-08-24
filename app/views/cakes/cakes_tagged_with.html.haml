@@ -4,7 +4,6 @@
     - @submenu.each do |key, value|
       %span.block= link_to value, subcategory_url(menu: @menu, subcategory: key)
     - if @menu == "novios"
-      %span.block= link_to "Cake Mapping", cakemapping_url
       %span.block.important_block= link_to "Cúpulas", wedding_toppings_url
   .clearfix
   - if @cakes.total_pages > 1
