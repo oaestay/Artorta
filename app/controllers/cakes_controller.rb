@@ -62,9 +62,9 @@ class CakesController < ApplicationController
     end
     unless @cakes.nil?
       @cakes = if @menu == "novios"
-                 @cakes.order("code desc, popularity desc, created_at desc")
+                 @cakes.order("code asc, popularity desc, created_at desc")
                else
-                 @cakes = @cakes.order("code asc, popularity desc, created_at desc")
+                 @cakes = @cakes.order("popularity desc, created_at desc")
                end
       @cakes = @cakes.paginate(page: params[:page], per_page: 24)
     end
