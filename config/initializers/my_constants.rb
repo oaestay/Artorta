@@ -36,16 +36,8 @@ MENU_DECORADAS = {
 }
 
 MENU_NOVIOS = {
-  "vintage" => "Vintage",
-  "tematicas" => "Temáticas",
-  "flores" => "Flores",
-  "sombras" => "Sombras",
-  "novios_pequenos" => "Novios Pequeños",
-  "modernas" => "Modernas",
-  "chile_lugares" => "Chile y el mundo",
-  "mitades" => "Mitades",
-  "musica" => "Música",
-  "cupcakes_minitortas" => "Cupcakes y Minitortas",
+  "boda" => "Boda",
+  "novios_pequenos" => "Novios Pequeños"
 }
 
 MENU_TRADICIONALES = {

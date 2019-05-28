@@ -61,7 +61,12 @@ class CakesController < ApplicationController
       redirect_to catalog_url
     end
     unless @cakes.nil?
-      @cakes = @cakes.order("popularity desc, created_at desc").paginate(page: params[:page], per_page: 24)
+      @cakes = if @menu == "novios"
+                 @cakes.order("code desc, popularity desc, created_at desc")
+               else
+                 @cakes = @cakes.order("code asc, popularity desc, created_at desc")
+               end
+      @cakes = @cakes.paginate(page: params[:page], per_page: 24)
     end
   end
 
