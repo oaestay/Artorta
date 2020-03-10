@@ -2,9 +2,9 @@
   .col-xs-12.col-sm-4
     = link_to(image_tag("aladino.jpg", class: 'promo-image max-width'), cakes_url(menu: "decoradas"))
   .col-xs-12.col-sm-4
-    = image_tag("novios.jpg", class: 'promo-image max-width')
+    = link_to(image_tag("novios.jpg", class: 'promo-image max-width'), cakes_url(menu: "novios"))
   .col-xs-12.col-sm-4
-    = image_tag("juegos.jpg", class: 'promo-image max-width')
+    = link_to(image_tag("juegos.jpg", class: 'promo-image max-width'), cakes_url(menu: "decoradas"))
 .clearfix
 .col-xs-12.col-sm-4.col-lg-2.col-lg-offset-1
   .space
