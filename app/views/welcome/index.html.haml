@@ -1,10 +1,10 @@
 .row.promos
   .col-xs-12.col-sm-4
-    = image_tag("coronavirus.png", class: 'promo-image max-width')
+    = link_to(image_tag("bizcocho_1.png", class: 'promo-image max-width'), cakes_url(menu: "tradicionales"))
   .col-xs-12.col-sm-4
-    = link_to(image_tag("miercoles.jpg", class: 'promo-image max-width'), cakes_url(menu: "decoradas"))
+    = link_to(image_tag("bizcocho_2.jpg", class: 'promo-image max-width'), cakes_url(menu: "tradicionales"))
   .col-xs-12.col-sm-4
-    = link_to(image_tag("pachano.jpg", class: 'promo-image max-width'), presses_url)
+    = image_tag("atencion.jpg", class: 'promo-image max-width')
 .clearfix
 .col-xs-12.col-sm-4.col-lg-2.col-lg-offset-1
   .space
