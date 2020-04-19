@@ -1,16 +1,10 @@
 require "i18n"
 
 class CakesController < ApplicationController
-  load_and_authorize_resource
-  before_action :authenticate_user!, :except => [:catalog, :index, :show, :search, :cakes_tagged_with]
-  before_action :set_cake, only: [:show, :edit, :update, :destroy]
-  autocomplete :tag, :name, :class_name => 'ActsAsTaggableOn::Tag', :limit => 5
-
   def catalog
     @title = "Catálogo"
     @newest = Cake.last(8)
-    @most_popular = Cake.all.order("popularity desc").limit(8)
-
+    @most_popular = Cake.all.order(popularity: :desc).limit(8)
   end
 
   def index
@@ -141,68 +135,7 @@ class CakesController < ApplicationController
     end
   end
 
-  def show
-    @cake.popularity += 1
-    @cake.save
-    respond_to do |format|
-      format.html # show.html.erb
-      format.js # show.js.erb
-    end
-  end
-
-  def new
-    @cake = Cake.new
-  end
-
-  def create
-    cp = cake_params
-    cp[:tag_list] << cp[:code]
-    cp[:tag_list] += cp[:name].split
-    cp[:tag_list] = remove_stopwords(cp[:tag_list])
-    @cake = Cake.new(cp)
-    if @cake.save
-      respond_to do |format|
-        format.html {redirect_to @cake}
-      end
-    else
-      render :new
-    end
-  end
-
-  def edit
-  end
-
-  def update
-    @cake.tag_list = []
-    @cake.save
-    @cake.reload
-    cp = cake_params
-    cp[:tag_list] << cp[:code]
-    cp[:tag_list] += cp[:name].split
-    cp[:tag_list] = remove_stopwords(cp[:tag_list])
-    respond_to do |format|
-      if @cake.update(cp)
-        format.html { redirect_to @cake, notice: 'Torta actualizada correctamente' }
-      else
-        format.html { render :edit }
-      end
-    end
-  end
-
-  def destroy
-    @cake.prices.each do |p|
-      p.destroy
-    end
-    @cake.destroy
-    flash[:notice] = "Torta eliminada correctamente"
-    redirect_to cakes_url
-  end
-
   private
-
-  def set_cake
-    @cake = Cake.find(params[:id])
-  end
 
   def cake_params
     params.require(:cake).permit(

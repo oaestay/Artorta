@@ -1,0 +1,35 @@
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  &__item {
+    flex: 1;
+    min-width: 250px;
+    margin: 15px;
+    cursor: pointer;
+
+    &:hover .grid-item__image {
+      border-color: lighten($dark-color, 50%);
+    }
+
+    &:hover .grid-item__label {
+      color: lighten($font-color, 50%);
+    }
+  }
+
+  &-item {
+    &__image {
+      border: 3px solid $dark-color;
+      margin: 0 auto;
+      display: block;
+    }
+
+    &__label {
+      margin: 5px;
+      text-align: center;
+    }
+  }
+}

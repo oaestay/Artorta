@@ -4,6 +4,15 @@
 
 @import "variables";
 
+/* Home */
+
+.promos {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /* Comprar */
 
 .cuenta-banco{

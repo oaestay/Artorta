@@ -1,0 +1,24 @@
+<div class="col-xs-10 col-xs-offset-1">
+  <h1>
+    Horario
+  </h1>
+  <hr class="sep"/>
+  <p>Lunes a Viernes de 09:30 a 19:00 y Sábado de 09:30 a 16:00.</p>
+  <h1 class="text-center">
+    Ubicación
+  </h1>
+  <hr class="sep"/>
+  <gmap-map
+    :center="{lat: -33.426203, lng: -70.6457555}"
+    :zoom="16"
+    map-type-id="terrain"
+    style="height: 350px"
+    class="location__map"
+  >
+    <gmap-marker
+      :clickable="false"
+      :draggable="false"
+      :position="{lat: -33.426203, lng: -70.6457555}"
+    />
+  </gmap-map>
+</div>

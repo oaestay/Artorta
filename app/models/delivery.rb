@@ -1,4 +1,4 @@
-class Delivery < ActiveRecord::Base
+class Delivery < ApplicationRecord
   attr_accessor :terms_and_conditions
   validates :first_name, presence: { message: "Debe ingresar su nombre" }
   validates :last_name, presence: { message: "Debe ingresar su apellido" }
@@ -11,3 +11,21 @@ class Delivery < ActiveRecord::Base
   validates :province, presence: { message: "Debe seleccionar una comuna" }
   validates :terms_and_conditions, :acceptance => true
 end
+
+# == Schema Information
+#
+# Table name: deliveries
+#
+#  id         :integer          not null, primary key
+#  address    :string
+#  cellphone  :string
+#  date       :date
+#  first_name :string
+#  last_name  :string
+#  mail       :string
+#  phone      :string
+#  province   :string
+#  references :text
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#

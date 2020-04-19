@@ -1,0 +1,54 @@
+.search-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 45px;
+  margin: 10px;
+
+  &__bar {
+    flex: 1;
+    font-size: 16px;
+    height: 100%;
+    border-radius: 0;
+    color: $font-color;
+    line-height: inherit;
+    box-sizing: border-box;
+
+    &#{&} {
+      padding-left: 14px;
+    }
+  }
+
+  &__category {
+    border-radius: 0;
+    font-size: 16px;
+    min-width: 300px;
+    height: 100%;
+    color: #24242a;
+    font-weight: bold;
+    text-indent: 5px;
+    -webkit-appearance: none;
+    background: url(~assets/dropdown_arrow.png) no-repeat right center;
+  }
+
+  &__bar,
+  &__category {
+    padding: 0;
+    border-right: none;
+  }
+
+  &__bar,
+  &__category,
+  &__submit {
+    border: 3px solid $font-color;
+    height: 100%;
+    margin: 0;
+  }
+
+  &__submit {
+    flex: 0;
+    min-width: fit-content;
+    padding: 0 40px;
+  }
+}

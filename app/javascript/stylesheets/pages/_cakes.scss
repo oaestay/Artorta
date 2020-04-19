@@ -1,0 +1,35 @@
+.cake {
+  margin-bottom: 20px;
+  img{
+    border: 3px solid $dark-color;
+  }
+}
+.cake_info{
+  a{
+    color: $link-color;
+    &:hover{
+      color: #a3a3a3;
+      text-decoration: none;
+    }
+  }
+}
+
+.cake-modal{
+  background: #fff;
+  border: 5px solid $dark-color;
+  img{
+    max-width: 100%;
+    border: 3px solid $dark-color;
+  }
+  .close{
+    color: $dark-color;
+    opacity: 1;
+    &:hover{
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      opacity: .2;
+    }
+  }
+}

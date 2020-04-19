@@ -1,0 +1,53 @@
+<div class="text-center">
+  <h1>Cúpulas</h1>
+  <hr class="sep"/>
+  <div class="col-sm-3">
+    <span class="btn-block">
+      <%= link_to "Tortas Decoradas", cakes_url(menu: "decoradas") %>
+    </span>
+  </div>
+  <div class="col-sm-3">
+    <span class="btn-block">
+      <%= link_to "Tortas de Novios", cakes_url(menu: "novios") %>
+    </span>
+  </div>
+  <div class="col-sm-3">
+    <span class="btn-block">
+      <%= link_to "Tortas Tradicionales", cakes_url(menu: "tradicionales") %>
+    </span>
+  </div>
+  <div class="col-sm-3">
+    <span class="btn-block">
+      <%= link_to "Cupcakes", cakes_url(menu: "cupcakes") %>
+    </span>
+  </div>
+  <div class="clearfix"></div>
+  <div class="submenu">
+    <% @submenu.each do |key, value| %>
+      <span class="block">
+        <%= link_to value, subcategory_url(menu: @menu, subcategory: key) %>
+      </span>
+    <% end %>
+    <span class="block important_block">
+      <%= link_to "Cúpulas", wedding_toppings_url %>
+    </span>
+  </div>
+  <div class="clearfix"></div>
+  <% if @wedding_toppings.total_pages > 1 %>
+    <div class="apple_pagination">
+      <%= will_paginate @wedding_toppings, container: false, previous_label: 'Anterior', next_label: 'Siguiente', inner_window: 2, outer_window: 1 %>
+    </div>
+  <% end %>
+  <div class="cakes">
+    <% @wedding_toppings.each_with_index do |c, index| %>
+      <%= render partial: 'item', locals: {c: c, index: index} %>
+    <% end %>
+    <%= render "layouts/modal" %>
+  </div>
+  <div class="clearfix"></div>
+  <% if @wedding_toppings.total_pages > 1 %>
+    <div class="apple_pagination">
+      <%= will_paginate @wedding_toppings, container: false, previous_label: 'Anterior', next_label: 'Siguiente', inner_window: 2, outer_window: 1 %>
+    </div>
+  <% end %>
+</div>

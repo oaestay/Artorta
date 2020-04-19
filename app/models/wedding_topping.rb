@@ -1,4 +1,4 @@
-class WeddingTopping < ActiveRecord::Base
+class WeddingTopping < ApplicationRecord
   validates :code, format: { with: /\A[A-Za-z0-9]+\Z/, message: "El código sólo puede tener letras y números"}
   validate :uniqueness_of_code, on: :create
   validates :code, presence: { message: "Debe ingresar un código" }
@@ -16,3 +16,19 @@ class WeddingTopping < ActiveRecord::Base
     end
   end
 end
+
+# == Schema Information
+#
+# Table name: wedding_toppings
+#
+#  id                 :integer          not null, primary key
+#  code               :string
+#  image_content_type :string
+#  image_file_name    :string
+#  image_file_size    :integer
+#  image_updated_at   :datetime
+#  name               :string
+#  popularity         :integer          default(0)
+#  created_at         :datetime         not null
+#  updated_at         :datetime         not null
+#

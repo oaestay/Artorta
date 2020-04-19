@@ -8099,3 +8099,4 @@ f.close()
 f = File.new('app/assets/images/cakes/NCUP6008.jpg')
 Cake.create(code: "NCUP6008", name: "Suave", image: f, category: "novios", description: "100 Cupcakes más torta de 60 personas", minimum_portions: 0, portion_price: 416000, includes_couple: true, warranty: 120000, prices_attributes: [], tag_list: ["cupcakes", "minitortas", "ncup", "6008", "suave", "cupcakes_minitortas", "NCUP6008"])
 f.close()
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?

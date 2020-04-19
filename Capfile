@@ -7,6 +7,7 @@ require 'capistrano/deploy'
 require 'capistrano/bundler'
 require 'capistrano/rails'
 require 'capistrano/rbenv'
+require "capistrano/webpacker/precompile"
 
 # Includes tasks from other gems included in your Gemfile
 #
@@ -26,7 +27,7 @@ require 'capistrano/rbenv'
 # require 'capistrano/rails/migrations'
 
 set :rbenv_type, :user # or :system, depends on your rbenv setup
-set :rbenv_ruby, '2.3.1'
+set :rbenv_ruby, '2.4.2'
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
 Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }

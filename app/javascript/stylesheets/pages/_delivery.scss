@@ -1,0 +1,14 @@
+.delivery {
+  &__communes {
+    background-color: #ededed;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &-communes__group > p {
+    margin: 5px;
+    min-width: 150px;
+  }
+}

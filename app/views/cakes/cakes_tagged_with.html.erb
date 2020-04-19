@@ -1,0 +1,33 @@
+<div class="text-center">
+  <%= render 'layouts/catalog_header' %>
+  <div class="submenu">
+    <% @submenu.each do |key, value| %>
+      <span class="block">
+        <%= link_to value, subcategory_url(menu: @menu, subcategory: key) %>
+      </span>
+    <% end %>
+    <% if @menu == "novios" %>
+      <span class="block important_block">
+        <%= link_to "Cúpulas", wedding_toppings_url %>
+      </span>
+    <% end %>
+  </div>
+  <div class="clearfix"></div>
+  <% if @cakes.total_pages > 1 %>
+    <div class="apple_pagination">
+      <%= will_paginate @cakes, container: false, previous_label: 'Anterior', next_label: 'Siguiente', inner_window: 2, outer_window: 1 %>
+    </div>
+  <% end %>
+  <div class="cakes">
+    <% @cakes.each_with_index do |c, index| %>
+      <%= render partial: 'item', locals: {c: c, index: index} %>
+    <% end %>
+    <%= render "layouts/modal" %>
+  </div>
+  <div class="clearfix"></div>
+  <% if @cakes.total_pages > 1 %>
+    <div class="apple_pagination">
+      <%= will_paginate @cakes, container: false, previous_label: 'Anterior', next_label: 'Siguiente', inner_window: 2, outer_window: 1 %>
+    </div>
+  <% end %>
+</div>

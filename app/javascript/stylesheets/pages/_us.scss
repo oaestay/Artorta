@@ -1,0 +1,14 @@
+.us {
+  &__images {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__image-item {
+    border: 3px solid $dark-color;
+    min-width: 250px;
+  }
+}

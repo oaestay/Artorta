@@ -1,0 +1,24 @@
+development: &default
+  adapter: postgresql
+  database: artorta_development
+  encoding: utf8
+  host: <%= ENV["BOXEN_POSTGRESQL_HOST"] || ENV["POSTGRESQL_HOST"] || "127.0.0.1" %>
+  port: <%= ENV["BOXEN_POSTGRESQL_PORT"] || ENV["POSTGRESQL_PORT"] || 5432 %>
+  username: <%= ENV["POSTGRESQL_USER"] %>
+  min_messages: warning
+  pool: <%= Integer(ENV.fetch("DB_POOL", 5)) %>
+  reaping_frequency: <%= Integer(ENV.fetch("DB_REAPING_FREQUENCY", 10)) %>
+  timeout: 5000
+
+test:
+  <<: *default
+  database: "fintual_rails_test<%=ENV['TEST_ENV_NUMBER']%>"
+
+production:
+  adapter: postgresql
+  database: artorta
+  encoding: utf8
+  host: localhost
+  pool: 5
+  username: <%= ENV["POSTGRESQL_USER"] %>
+  password: <%= ENV["POSTGRESQL_PASSWORD"] %>

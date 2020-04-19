@@ -1,0 +1,23 @@
+<h1>Empresas</h1>
+<hr class="sep"/>
+<% if @companies.total_pages > 1 %>
+  <div class="pagination pagination--top">
+    <%= will_paginate @companies, container: false, previous_label: 'Anterior', next_label: 'Siguiente', inner_window: 2, outer_window: 1 %>
+  </div>
+<% end %>
+<div class="grid <%= @companies.total_pages > 1 ? 'paginated' : ''%>">
+  <% @companies.each_with_index do |item, index| %>
+    <div
+      class="grid__item"
+      @click="openModal(<%= { name: item.name, image_url: item.image.url(:large) }.to_json %>)"
+    >
+      <%= image_tag(item.image.url(:small), class: 'grid-item__image') %>
+      <p class="grid-item__label"><%= item.name %></p>
+    </div>
+  <% end %>
+</div>
+<% if @companies.total_pages > 1 %>
+  <div class="pagination pagination--bottom">
+    <%= will_paginate @companies, container: false, previous_label: 'Anterior', next_label: 'Siguiente', inner_window: 2, outer_window: 1 %>
+  </div>
+<% end %>

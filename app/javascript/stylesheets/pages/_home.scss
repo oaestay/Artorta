@@ -1,0 +1,41 @@
+.promos {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.promo-item {
+  &__link {
+    flex: 1;
+    margin: 0 15px 15px;
+    min-width: 350px;
+    max-width: 600px;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+}
+
+.mini-banners {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &-item {
+    &__link {
+      flex: 1;
+      margin: 0 15px 15px;
+      min-width: 250px;
+      max-width: 300px;
+    }
+
+    &__image {
+      max-width: 100%;
+    }
+  }
+}

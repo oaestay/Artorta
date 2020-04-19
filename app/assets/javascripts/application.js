@@ -10,35 +10,10 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require jquery-ui.min
-//= require autocomplete-rails
-//= require bootstrap.min
-//= require cocoon
-//= require owl.carousel.min
-//= require select2-full
 
-$(document).ready(function() {
+//= require turbolinks
 
-    $("#owl-hero").owlCarousel({
 
-        loop: true,
-        nav: true,
-        items: 1,
-        autoPlay: true,
-        autoplaySpeed: 100,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
-
-    });
-    var preloader = $(".preloader");
-    $(window).load(function() {
-        preloader.remove();
-    })
-    $("#tag_list").on('autocompleteresponse', function(event, ui) {
-          var content;
-          if (((content = ui.content) != null ? content[0].id.length : void 0) === 0) {
-            $(this).autocomplete('close');
-          }
-      });
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById('preloader').remove()
 });

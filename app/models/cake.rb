@@ -1,5 +1,5 @@
-class Cake < ActiveRecord::Base
-
+class Cake < ApplicationRecord
+  acts_as_taggable
   validates :code, format: { with: /\A[A-Za-z0-9]+\Z/, message: "El código sólo puede tener letras y números"}
   validate :uniqueness_of_code, on: :create
   validates :code, presence: { message: "Debe ingresar un código" }
@@ -9,22 +9,14 @@ class Cake < ActiveRecord::Base
   has_attached_file :image, styles: { large: "420x420", medium: "300x300", small: "240x240" }, default_url: ActionController::Base.helpers.asset_path(":style/missing.png")
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 
-  has_many :prices, -> { order 'portions' }
+  has_many :prices, -> { order 'portions' }, dependent: :destroy
 
-  acts_as_taggable
+  accepts_nested_attributes_for :prices, allow_destroy: true
 
-  accepts_nested_attributes_for :prices, reject_if: :all_blank, allow_destroy: true
-
-  scope :decoradas, -> { where("category = 'decoradas'") }
-  scope :novios, -> { where("category = 'novios'") }
-  scope :tradicionales, -> { where("category = 'tradicionales'") }
-  scope :cupcakes, -> { where("category = 'cupcakes'") }
-  scope :coctel, -> { where("category = 'coctel'") }
-  scope :postres, -> { where("category = 'postres'") }
-  scope :pies, -> { where("category = 'pies'") }
-  scope :chocolateria, -> { where("category = 'chocolateria'") }
-  scope :galletones, -> { where("category = 'galletones'") }
-
+  enum category: [
+    :decoradas, :novios, :tradicionales, :cupcakes,
+    :coctel, :postres, :pies, :chocolateria, :galletones
+  ]
 
   def uniqueness_of_code
     existing_record = Cake.find_by_code(code)
@@ -33,3 +25,25 @@ class Cake < ActiveRecord::Base
     end
   end
 end
+
+# == Schema Information
+#
+# Table name: cakes
+#
+#  id                 :integer          not null, primary key
+#  category           :integer
+#  code               :string           not null
+#  description        :text             default("")
+#  image_content_type :string
+#  image_file_name    :string
+#  image_file_size    :integer
+#  image_updated_at   :datetime
+#  includes_couple    :boolean          default(FALSE)
+#  minimum_portions   :integer          default(0)
+#  name               :string           not null
+#  popularity         :integer          default(0)
+#  portion_price      :integer          default(0)
+#  warranty           :integer          default(0)
+#  created_at         :datetime         not null
+#  updated_at         :datetime         not null
+#

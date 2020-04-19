@@ -1,0 +1,22 @@
+.flavours__table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  & > tbody > tr > td:first-child {
+    background-color: #d0d0d0;
+    padding: 0 5px 5px;
+    min-width: 175px;
+
+    & > p {
+      text-align: center;
+    }
+  }
+
+  & > tbody > tr > td:last-child {
+    & > p {
+      margin-left: 5px;
+    }
+  }
+}

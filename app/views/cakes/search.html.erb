@@ -1,0 +1,51 @@
+<h1><%= @title %></h1>
+<hr class="sep"/>
+<div class="actions">
+  <%= link_to 'Tortas Decoradas', cakes_url(menu: 'decoradas'), class: 'btn' %>
+  <%= link_to 'Tortas de Novios', cakes_url(menu: 'novios'), class: 'btn' %>
+  <%= link_to 'Tortas Tradicionales', cakes_url(menu: 'tradicionales'), class: 'btn' %>
+  <%= link_to 'Cupcakes', cakes_url(menu: 'cupcakes'), class: 'btn' %>
+  <%= link_to 'Cóctel', cakes_url(menu: 'coctel'), class: 'btn' %>
+  <%= link_to 'Postres', cakes_url(menu: 'postres'), class: 'btn' %>
+</div>
+
+<% if @cakes.total_pages > 1 %>
+  <div class="pagination pagination--top">
+    <%= will_paginate @cakes, container: false, previous_label: 'Anterior', next_label: 'Siguiente', inner_window: 2, outer_window: 1 %>
+  </div>
+<% end %>
+
+<% if @cakes.size > 0 %>
+  <div class="grid <%= @cakes.total_pages > 1 ? 'paginated' : ''%>">
+    <% @cakes.each_with_index do |item, index| %>
+      <div
+        class="grid__item"
+        @click="openModal(<%= {
+          name: item.name,
+          image_url: item.image.url(:large),
+          code: item.code,
+          description: item.description,
+          includes_couple: item.includes_couple,
+          minimum_portions: item.minimum_portions,
+          portion_price: item.portion_price,
+          warranty: item.warranty,
+          prices: item.prices.map { |p| "#{p.portions} personas: $#{p.price}" }
+        }.to_json %>)"
+
+      >
+        <%= image_tag(item.image.url(:small), class: 'grid-item__image') %>
+        <h4 class="grid-item__label"><%= item.name %></h4>
+        <h5 class="grid-item__label">Codigo: <%= item.code %></h5>
+        <h6 class="grid-item__label">(Pinche la imagen para ver los precios)</h6>
+      </div>
+    <% end %>
+  </div>
+<% else %>
+  <h1>La búsqueda no produjo resultados</h1>
+<% end %>
+
+<% if @cakes.total_pages > 1 %>
+  <div class="pagination pagination--bottom">
+    <%= will_paginate @cakes, container: false, previous_label: 'Anterior', next_label: 'Siguiente', inner_window: 2, outer_window: 1 %>
+  </div>
+<% end %>

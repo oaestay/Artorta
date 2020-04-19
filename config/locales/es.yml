@@ -1,4 +1,5 @@
 es:
+  cake: "Torta"
   errors:
     messages:
       blank: "No puede estar en blanco"
@@ -30,3 +31,31 @@ es:
       words_connector: ", "
       two_words_connector: " and "
       last_word_connector: ", and "
+  activerecord:
+    models:
+      cake: "Torta"
+      price: "Precio"
+      press: "Prensa"
+      company: "Empresa"
+    attributes:
+      cake:
+        category: "Categoría"
+        code: "Código"
+        description: "Descripción"
+        image: "Foto"
+        includes_couple: "Incluye cúpula"
+        minimum_portions: "Porciones mínimas"
+        name: "Nombre"
+        popularity: "Ranking"
+        portion_price: "Precio por porción"
+        warranty: "Garantía"
+        tag_list: "Tags"
+        created_at: "Creado"
+        updated_at: "Actualizado"
+      price:
+        portions: "Porciones"
+        price: "Precio"
+      press:
+        name: "Nombre"
+      company:
+        name: "Nombre"

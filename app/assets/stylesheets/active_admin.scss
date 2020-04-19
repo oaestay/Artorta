@@ -1,0 +1,194 @@
+@import 'activeadmin_addons/all';
+//= require activeadmin_addons/all
+// SASS variable overrides must be declared before loading up Active Admin's styles.
+//
+// To view the variables that Active Admin provides, take a look at
+// `app/assets/stylesheets/active_admin/mixins/_variables.scss` in the
+// Active Admin source.
+//
+// For example, to change the sidebar width:
+// $sidebar-width: 242px;
+
+// Active Admin's got SASS!
+@import "active_admin/mixins";
+@import "active_admin/base";
+$skinActiveColor: #34ae9c;
+$skinHeaderBck: #064465;
+$panelHeaderBck: #064465;
+//$skinLogo: $skinHeaderBck image-url("logo_admin.png") no-repeat center center;
+
+@import "active_skin";
+
+#header h1.site_title {
+  background: inherit;
+  line-height: 10px;
+  text-indent: -120px;
+}
+
+#site_title_image {
+  height: 40px;
+}
+
+.active_admin {
+  padding-bottom: 0 !important;
+}
+
+#main_content {
+  .panel {
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+#footer {
+  display: none;
+}
+
+.broker-button,
+.broker-button:link,
+.broker-button:visited {
+  display: inline-block;
+  text-align: center;
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 150px;
+  color: #3dade2;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 40px;
+  border: solid 1px #3dade2;
+  margin: 5px;
+  font-weight: bold;
+  position: relative;
+}
+
+.broker-button:hover {
+  color: #25759a;
+  border: solid 1px #25759a;
+}
+
+.operations-counter {
+  border-radius: 30px;
+  border: 2px solid #fff;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  line-height: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
+  background-color: #ff6b6b;
+  color: #fff;
+  font-weight: 700;
+}
+
+.question_links {
+  list-style: none;
+  font-size: 13px;
+
+  .email {
+    font-weight: bold;
+    min-width: 50px;
+  }
+
+  .item {
+    padding-bottom: 10px;
+  }
+
+  .code {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+#index_table_missing_deposits {
+  h4 {
+    margin-top: 0;
+  }
+}
+
+.status-tag {
+  font-size: 15px;
+
+  &__label {
+    width: 200px;
+    display: inline-block;
+  }
+
+  &__value {
+    display: inline-block;
+
+    &--pending {
+      color: #25759a;
+    }
+
+    &--failed {
+      color: #ff6b6b;
+    }
+
+    &--finished {
+      color: #34ae9c;
+    }
+  }
+}
+
+.waiting_answer {
+  background-color: #3DADE2;
+}
+
+.closed {
+  background-color: #27B24F;
+}
+
+.open {
+  background-color: #FF6B6B;
+}
+
+.daily-values-panel {
+  font-size: 9px;
+}
+
+.new_entry_form {
+  fieldset.inputs {
+    padding-top: 0 !important;
+  }
+}
+
+.edit_entry_form {
+  fieldset.inputs {
+    padding-top: 0 !important;
+  }
+}
+
+.image-row, .image-column {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+form.form_in_place{
+  display: flex !important;
+  .bip-input{
+    flex: 1;
+    width: auto;
+  }
+  .bip-ok{
+    display: inline-block;
+  }
+  .bip-cancel{
+    display: inline-block;
+  }
+}
+
+.form {
+  &__instructions {
+    margin: 0 25px;
+  }
+}
+
+.status_tag.info {
+  background: #6090DB;
+}
