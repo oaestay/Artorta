@@ -14,7 +14,7 @@ module RealmBehaviour
   end
 
   def use_scoped_resources?
-    Cake.where(realm: current_realm).any?
+    Cake.where(realm: :traditional).any?
   end
 
   def decorated_subdomain?
