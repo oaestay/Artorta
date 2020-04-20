@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_20_053746) do
+ActiveRecord::Schema.define(version: 2020_04_20_055820) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(version: 2020_04_20_053746) do
     t.text "description", default: ""
     t.integer "popularity", default: 0
     t.bigint "category_id"
+    t.integer "realm"
     t.index ["category_id"], name: "index_cakes_on_category_id"
   end
 

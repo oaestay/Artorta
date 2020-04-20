@@ -13,6 +13,8 @@ class Cake < ApplicationRecord
 
   has_many :prices, -> { order 'portions' }, dependent: :destroy
 
+  enum realm: [:decorated, :traditional]
+
   accepts_nested_attributes_for :prices, allow_destroy: true
 
   def uniqueness_of_code
@@ -39,6 +41,7 @@ end
 #  name               :string           not null
 #  popularity         :integer          default(0)
 #  portion_price      :integer          default(0)
+#  realm              :integer
 #  warranty           :integer          default(0)
 #  created_at         :datetime         not null
 #  updated_at         :datetime         not null

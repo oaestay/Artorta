@@ -16,6 +16,10 @@ ActiveAdmin.register Cake do
   controller do
     include TagBehaviour
 
+    def scoped_collection
+      end_of_association_chain.where(realm: current_realm)
+    end
+
     def create
       params[:cake].delete(:virtual_tag_list_attr)
       params[:cake][:tag_list] = params[:cake][:tag_list].split.map { |tag| normalize_string(tag) }
@@ -82,11 +86,13 @@ ActiveAdmin.register Cake do
     f.inputs "Torta" do
       f.input :name
       f.input :code
-      f.input :category
+      f.input :category, as: :select, collection: Category.where(realm: current_realm)
       f.input :description
       f.input :image
       f.input :tag_list, as: :tags, label: 'Tags'
+      f.input :realm, as: :hidden, input_html: { value: current_realm }
     end
+
     f.inputs do
       f.has_many :prices, heading: 'Precios',
                           allow_destroy: true do |ff|

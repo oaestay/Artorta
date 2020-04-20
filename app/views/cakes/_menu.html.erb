@@ -1,6 +1,12 @@
 <div class="actions">
-  <% Category.active.each do |category| %>
-  <%= link_to category.name, cakes_url(category: category.slug), class: 'btn' %>
+  <% if use_scoped_resources? %>
+    <% Category.where(realm: current_realm).active.each do |category| %>
+    <%= link_to category.name, cakes_url(category: category.slug), class: 'btn' %>
+    <% end %>
+  <% else %>
+    <% Category.active.each do |category| %>
+    <%= link_to category.name, cakes_url(category: category.slug), class: 'btn' %>
+    <% end %>
   <% end %>
 </div>
 <% unless @category.blank? || @category.subcategories.empty? %>

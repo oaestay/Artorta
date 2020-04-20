@@ -14,6 +14,15 @@ ActiveAdmin.register Category do
       end.to_h
       create!
     end
+
+    def update
+      params[:slug] = I18n.transliterate(params["name"].delete(" ")).underscore
+      subcategories = params[:cake].delete([:subcategories_input]).split
+      params[:category][:subcategories] = subcategories.map do |subcategory|
+        [I18n.transliterate(subcategory.delete(" ")).underscore, subcategory]
+      end.to_h
+      create!
+    end
   end
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters

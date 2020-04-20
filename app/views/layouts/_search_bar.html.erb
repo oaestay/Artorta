@@ -1,5 +1,9 @@
 <%= form_tag(search_path, method: 'get', class: 'search-form') do %>
   <input name="tag_list" type="text" class="search-form__bar">
-  <%= select_tag :category, options_for_select([['Todos', 'all'], ['Tortas Decoradas', 'decoradas'], ['Tortas de Novios', 'novios'], ['Tortas Tradicionales', 'tradicionales'], ['Cupcakes', 'cupcakes'], ['Cóctel', 'coctel'], ['Postres', 'postres'], ['Pies y Brazos', 'pies'], ['Chocolatería', 'chocolateria'], ['Galletones', 'galletones']]), label: false, include_blank: false, class: "search-form__category" %>
+  <% if use_scoped_resources? %>
+    <%= select_tag :category, options_for_select(Category.where(realm: current_realm).active.map { |category| [category.name, category.slug] }), label: false, include_blank: false, class: "search-form__category" %>
+  <% else %>
+    <%= select_tag :category, options_for_select(Category.active.map { |category| [category.name, category.slug] }), label: false, include_blank: false, class: "search-form__category" %>
+  <% end %>
   <%= submit_tag "Buscar", class: 'btn search-form__submit' %>
 <% end %>
