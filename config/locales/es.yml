@@ -63,5 +63,6 @@ es:
       category:
         active: "Activa"
         name: "Nombre"
+        priority: "Prioridad"
         slug: "Identificador"
         subcategories: "Subcategorías"

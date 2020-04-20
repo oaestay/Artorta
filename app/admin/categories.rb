@@ -42,6 +42,7 @@ ActiveAdmin.register Category do
   form do |f|
     f.inputs "Torta" do
       f.input :name
+      f.input :priority, label: "Prioridad (se ordenan de menor a mayor)"
       f.input :active, input_html: { checked: true }
       f.input :subcategories_input, as: :tags, label: "Subcategorías"
       f.input :realm, as: :hidden, input_html: { value: current_realm }
