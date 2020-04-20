@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_20_062005) do
+ActiveRecord::Schema.define(version: 2020_04_20_062442) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -117,6 +117,20 @@ ActiveRecord::Schema.define(version: 2020_04_20_062005) do
     t.index ["cake_id"], name: "index_prices_on_cake_id"
   end
 
+  create_table "promos", force: :cascade do |t|
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.integer "image_file_size"
+    t.datetime "image_updated_at"
+    t.bigint "category_id"
+    t.string "name"
+    t.integer "realm"
+    t.integer "priority"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["category_id"], name: "index_promos_on_category_id"
+  end
+
   create_table "taggings", id: :serial, force: :cascade do |t|
     t.integer "tag_id"
     t.integer "taggable_id"
@@ -174,4 +188,5 @@ ActiveRecord::Schema.define(version: 2020_04_20_062005) do
 
   add_foreign_key "cakes", "categories"
   add_foreign_key "prices", "cakes"
+  add_foreign_key "promos", "categories"
 end

@@ -1,6 +1,6 @@
 ActiveAdmin.register Cake do
   permit_params :id, :name, :code, :category_id, :minimum_portions, :portion_price, :includes_couple,
-    :warranty, :image, :description, :popularity,
+    :warranty, :image, :description, :popularity, :realm,
     :tag_list, prices_attributes: [:id, :portions, :price, :_destroy]
 
   filter :name
@@ -80,7 +80,6 @@ ActiveAdmin.register Cake do
       end
     end
   end
-
 
   form do |f|
     f.inputs "Torta" do

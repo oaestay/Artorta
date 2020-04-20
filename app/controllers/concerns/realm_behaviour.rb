@@ -6,6 +6,7 @@ module RealmBehaviour
   included do
     helper_method :current_realm
     helper_method :use_scoped_resources?
+    helper_method :decorated_subdomain?
   end
 
   def current_realm
@@ -15,8 +16,6 @@ module RealmBehaviour
   def use_scoped_resources?
     Cake.where(realm: current_realm).any?
   end
-
-  private
 
   def decorated_subdomain?
     request.subdomain == 'decoradas'
