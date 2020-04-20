@@ -1,27 +1,32 @@
 ActiveAdmin.register Category do
- controller do
-    include ::RealmBehaviour
+  permit_params :id, :name, :slug, :category_id, :subcategories, :realm
+
+   controller do
+    include RealmBehaviour
+    include TagBehaviour
 
     def scoped_collection
       end_of_association_chain.where(realm: current_realm)
     end
 
     def create
-      params[:slug] = I18n.transliterate(params["name"].delete(" ")).underscore
-      subcategories = params[:cake].delete([:subcategories_input]).split
+      params[:category].delete(:virtual_subcategories_input_attr)
+      params[:category][:slug] = normalize_string(params[:category][:name])
+      subcategories = params[:category].delete(:subcategories_input).split
       params[:category][:subcategories] = subcategories.map do |subcategory|
-        [I18n.transliterate(subcategory.delete(" ")).underscore, subcategory]
+        [normalize_string(subcategory), subcategory]
       end.to_h
       create!
     end
 
     def update
-      params[:slug] = I18n.transliterate(params["name"].delete(" ")).underscore
-      subcategories = params[:cake].delete([:subcategories_input]).split
+      params[:category].delete(:virtual_subcategories_input_attr)
+      params[:category][:slug] = normalize_string(params[:category][:name])
+      subcategories = params[:category].delete(:subcategories_input).split
       params[:category][:subcategories] = subcategories.map do |subcategory|
-        [I18n.transliterate(subcategory.delete(" ")).underscore, subcategory]
+        [normalize_string(subcategory), subcategory]
       end.to_h
-      create!
+      update!
     end
   end
   # See permitted parameters documentation:
