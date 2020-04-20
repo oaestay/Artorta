@@ -5,6 +5,8 @@ set :repo_url, 'git@github.com:oaestay/Artorta.git'
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # Default deploy_to directory is /var/www/my_app
+set :user, "deploy"
+set :default_stage, "production"
 set :deploy_to, '/home/deploy/Artorta'
 
 # Default value for :scm is :git
@@ -20,7 +22,7 @@ set :deploy_to, '/home/deploy/Artorta'
 # set :pty, true
 
 # Default value for :linked_files is []
-# set :linked_files, %w{config/database.yml config/secrets.yml}
+set :linked_files, %w{config/application.yml}
 
 # Default value for linked_dirs is []
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
@@ -44,4 +46,17 @@ namespace :deploy do
   after :publishing, :restart
   after :finishing, 'deploy:cleanup'
   after 'deploy:updated', 'webpacker:precompile'
+end
+
+before "deploy:assets:precompile", "deploy:yarn_install"
+
+namespace :deploy do
+  desc 'Run rake yarn:install'
+  task :yarn_install do
+    on roles(:web) do
+      within release_path do
+        execute("cd #{release_path} && yarn install")
+      end
+    end
+  end
 end
