@@ -5,8 +5,6 @@ class Category < ApplicationRecord
 
   has_many :cakes, dependent: :nullify
 
-  default_scope { order(priority: :asc) }
-
   scope :active, -> { where(active: true) }
 
   def subcategories_input
