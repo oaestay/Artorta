@@ -1,13 +1,14 @@
 <h1><%= @title %></h1>
 <hr class="sep"/>
 <div class="actions">
-  <%= link_to 'Tortas Decoradas', cakes_url(menu: 'decoradas'), class: 'btn' %>
-  <%= link_to 'Tortas de Novios', cakes_url(menu: 'novios'), class: 'btn' %>
-  <%= link_to 'Tortas Tradicionales', cakes_url(menu: 'tradicionales'), class: 'btn' %>
-  <%= link_to 'Cupcakes', cakes_url(menu: 'cupcakes'), class: 'btn' %>
-  <%= link_to 'Cóctel', cakes_url(menu: 'coctel'), class: 'btn' %>
-  <%= link_to 'Postres', cakes_url(menu: 'postres'), class: 'btn' %>
+  <%= link_to 'Tortas Decoradas', cakes_url(category: 'decoradas'), class: 'btn' %>
+  <%= link_to 'Tortas de Novios', cakes_url(category: 'novios'), class: 'btn' %>
+  <%= link_to 'Tortas Tradicionales', cakes_url(category: 'tradicionales'), class: 'btn' %>
+  <%= link_to 'Cupcakes', cakes_url(category: 'cupcakes'), class: 'btn' %>
+  <%= link_to 'Cóctel', cakes_url(category: 'coctel'), class: 'btn' %>
+  <%= link_to 'Postres', cakes_url(category: 'postres'), class: 'btn' %>
 </div>
+<%= render 'layouts/search_bar' %>
 <h1>¡Las más populares!</h1>
 <hr class="sep"/>
 <div class="grid">

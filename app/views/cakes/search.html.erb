@@ -1,4 +1,4 @@
-<h1><%= @title %></h1>
+<h1>Resultados de la búsqueda</h1>
 <hr class="sep"/>
 <div class="actions">
   <%= link_to 'Tortas Decoradas', cakes_url(menu: 'decoradas'), class: 'btn' %>
@@ -8,7 +8,7 @@
   <%= link_to 'Cóctel', cakes_url(menu: 'coctel'), class: 'btn' %>
   <%= link_to 'Postres', cakes_url(menu: 'postres'), class: 'btn' %>
 </div>
-
+<%= render 'layouts/search_bar' %>
 <% if @cakes.total_pages > 1 %>
   <div class="pagination pagination--top">
     <%= will_paginate @cakes, container: false, previous_label: 'Anterior', next_label: 'Siguiente', inner_window: 2, outer_window: 1 %>

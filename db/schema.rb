@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_19_210325) do
+ActiveRecord::Schema.define(version: 2020_04_20_035923) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,7 +56,18 @@ ActiveRecord::Schema.define(version: 2020_04_19_210325) do
     t.datetime "image_updated_at"
     t.text "description", default: ""
     t.integer "popularity", default: 0
-    t.integer "category"
+    t.bigint "category_id"
+    t.index ["category_id"], name: "index_cakes_on_category_id"
+  end
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.text "subcategories"
+    t.boolean "active"
+    t.integer "realm"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "slug"
   end
 
   create_table "companies", id: :serial, force: :cascade do |t|
@@ -159,5 +170,6 @@ ActiveRecord::Schema.define(version: 2020_04_19_210325) do
     t.datetime "image_updated_at"
   end
 
+  add_foreign_key "cakes", "categories"
   add_foreign_key "prices", "cakes"
 end

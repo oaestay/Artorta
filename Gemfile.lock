@@ -83,9 +83,9 @@ GEM
     autoprefixer-rails (9.7.6)
       execjs
     bcrypt (3.1.13)
-    better_errors (2.1.1)
+    better_errors (2.6.0)
       coderay (>= 1.0.0)
-      erubis (>= 2.6.6)
+      erubi (>= 1.0.0)
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -112,7 +112,7 @@ GEM
     climate_control (0.2.0)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
-    coderay (1.1.1)
+    coderay (1.1.2)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
     debug_inspector (0.0.3)
@@ -123,7 +123,6 @@ GEM
       responders
       warden (~> 1.2.3)
     erubi (1.9.0)
-    erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.12.2)
     figaro (1.1.1)
