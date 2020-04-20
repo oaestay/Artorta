@@ -4,6 +4,12 @@ class Category < ApplicationRecord
   enum realm: [:decorated, :traditional]
 
   has_many :cakes, dependent: :nullify
+
+  scope :active, -> { where(active: true) }
+
+  def subcategories_input
+    subcategories.values
+  end
 end
 
 # == Schema Information

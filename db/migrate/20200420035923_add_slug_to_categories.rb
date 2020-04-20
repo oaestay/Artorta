@@ -1,8 +1,8 @@
 class AddSlugToCategories < ActiveRecord::Migration[5.2]
   CATEGORY_NAMES = {
-    "decoradas" => "Decoradas",
-    "novios" =>  "Novios",
-    "tradicionales" =>  "Tradicionales",
+    "decoradas" => "Tortas Decoradas",
+    "novios" =>  "Tortas de Novios",
+    "tradicionales" =>  "Tortas Tradicionales",
     "cupcakes" => "Cupcakes",
     "coctel" => "Cóctel",
     "postres" => "Postres",

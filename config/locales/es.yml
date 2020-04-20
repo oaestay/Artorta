@@ -37,6 +37,7 @@ es:
       price: "Precio"
       press: "Prensa"
       company: "Empresa"
+      category: "Categoría"
     attributes:
       cake:
         category: "Categoría"
@@ -59,3 +60,8 @@ es:
         name: "Nombre"
       company:
         name: "Nombre"
+      category:
+        active: "Activa"
+        name: "Nombre"
+        slug: "Identificador"
+        subcategories: "Subcategorías"

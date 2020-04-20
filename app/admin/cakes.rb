@@ -1,5 +1,5 @@
 ActiveAdmin.register Cake do
-  permit_params :id, :name, :code, :category, :minimum_portions, :portion_price, :includes_couple,
+  permit_params :id, :name, :code, :category_id, :minimum_portions, :portion_price, :includes_couple,
     :warranty, :image, :description, :popularity,
     :tag_list, prices_attributes: [:id, :portions, :price, :_destroy]
 
@@ -14,11 +14,24 @@ ActiveAdmin.register Cake do
   filter :warranty
 
   controller do
+    include TagBehaviour
+
     def create
       params[:cake].delete(:virtual_tag_list_attr)
-      params[:cake][:tag_list] = params[:cake][:tag_list].split.join(", ")
-      binding.pry
+      params[:cake][:tag_list] = params[:cake][:tag_list].split.map { |tag| normalize_string(tag) }
+      params[:cake][:tag_list] += params[:cake][:code].split.map { |tag| normalize_string(tag) }
+      params[:cake][:tag_list] += params[:cake][:name].split.map { |tag| normalize_string(tag) }
+      params[:cake][:tag_list] = remove_stopwords(params[:cake][:tag_list]).join(", ")
       create!
+    end
+
+    def update
+      params[:cake].delete(:virtual_tag_list_attr)
+      params[:cake][:tag_list] = params[:cake][:tag_list].split.map { |tag| normalize_string(tag) }
+      params[:cake][:tag_list] += params[:cake][:code].split.map { |tag| normalize_string(tag) }
+      params[:cake][:tag_list] += params[:cake][:name].split.map { |tag| normalize_string(tag) }
+      params[:cake][:tag_list] = remove_stopwords(params[:cake][:tag_list]).join(", ")
+      update!
     end
   end
 

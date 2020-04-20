@@ -1,7 +1,7 @@
 class Cake < ApplicationRecord
   acts_as_taggable
 
-  belongs_to :cake, required: false
+  belongs_to :category, required: false
 
   validates :code, format: { with: /\A[A-Za-z0-9]+\Z/, message: "El código sólo puede tener letras y números"}
   validate :uniqueness_of_code, on: :create

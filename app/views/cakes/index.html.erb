@@ -1,23 +1,6 @@
 <h1><%= @title %></h1>
 <hr class="sep"/>
-<div class="actions">
-  <%= link_to 'Tortas Decoradas', cakes_url(category: 'decoradas'), class: 'btn' %>
-  <%= link_to 'Tortas de Novios', cakes_url(category: 'novios'), class: 'btn' %>
-  <%= link_to 'Tortas Tradicionales', cakes_url(category: 'tradicionales'), class: 'btn' %>
-  <%= link_to 'Cupcakes', cakes_url(category: 'cupcakes'), class: 'btn' %>
-  <%= link_to 'Cóctel', cakes_url(category: 'coctel'), class: 'btn' %>
-  <%= link_to 'Postres', cakes_url(category: 'postres'), class: 'btn' %>
-</div>
-<% unless @category.subcategories.empty? %>
-  <div class="actions actions--mini">
-    <% @category.subcategories.each do |key, value| %>
-      <%= link_to value, cakes_url(category: @category.slug, subcategory: key), class: 'btn btn--mini' %>
-    <% end %>
-    <% if @category.slug == "novios" %>
-      <%= link_to "Cupulas", wedding_toppings_url, class: 'btn btn--mini btn--highlight' %>
-    <% end %>
-  </div>
-<% end %>
+<%= render 'menu' %>
 <%= render 'layouts/search_bar' %>
 <% if @cakes.total_pages > 1 %>
   <div class="pagination pagination--top">
