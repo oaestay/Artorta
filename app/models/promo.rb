@@ -6,6 +6,8 @@ class Promo < ApplicationRecord
   has_attached_file :image, styles: { medium: "600x600", small: "240x240" }, default_url: ActionController::Base.helpers.asset_path(":style/missing.png")
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 
+  default_scope { order(priority: :asc) }
+
   enum realm: [:decorated, :traditional]
 end
 
