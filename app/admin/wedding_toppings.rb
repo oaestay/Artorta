@@ -6,6 +6,7 @@ ActiveAdmin.register WeddingTopping do
     id_column
     column :name
     column :code
+    column :popularity
     image_column :image, style: :small
     actions
   end
@@ -17,6 +18,7 @@ ActiveAdmin.register WeddingTopping do
           row :id
           row :name
           row :code
+          row :popularity
           row :created_at
           row :updated_at
         end
@@ -33,6 +35,7 @@ ActiveAdmin.register WeddingTopping do
     f.inputs "Cúpula" do
       f.input :name
       f.input :code
+      f.input :popularity
       f.input :image
     end
     f.actions
