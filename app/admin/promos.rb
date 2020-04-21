@@ -2,6 +2,7 @@ ActiveAdmin.register Promo do
   permit_params :image, :category_id, :name, :realm, :priority
 
   index do
+    selectable_column
     id_column
     column :name
     column :category

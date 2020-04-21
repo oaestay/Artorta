@@ -40,6 +40,7 @@ ActiveAdmin.register Cake do
   end
 
   index do
+    selectable_column
     id_column
     column :name
     column :code

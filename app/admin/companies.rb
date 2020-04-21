@@ -2,6 +2,7 @@ ActiveAdmin.register Company do
   permit_params :id, :name, :image
 
   index do
+    selectable_column
     id_column
     column :name
     image_column :image, style: :small

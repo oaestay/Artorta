@@ -1,10 +1,11 @@
-ActiveAdmin.register Press do
-  permit_params :id, :name, :image
+ActiveAdmin.register WeddingTopping do
+  permit_params :id, :name, :code, :image
 
   index do
     selectable_column
     id_column
     column :name
+    column :code
     image_column :image, style: :small
     actions
   end
@@ -15,6 +16,7 @@ ActiveAdmin.register Press do
         attributes_table do
           row :id
           row :name
+          row :code
           row :created_at
           row :updated_at
         end
@@ -27,10 +29,10 @@ ActiveAdmin.register Press do
     end
   end
 
-
   form do |f|
-    f.inputs "Prensa" do
+    f.inputs "Cúpula" do
       f.input :name
+      f.input :code
       f.input :image
     end
     f.actions
