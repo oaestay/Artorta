@@ -38,6 +38,7 @@ es:
       press: "Prensa"
       company: "Empresa"
       category: "Categoría"
+      wedding_topping: "Cúpula"
     attributes:
       cake:
         category: "Categoría"
@@ -71,3 +72,9 @@ es:
         priority: "Prioridad"
         image: "Foto"
         category: "Categoría"
+      wedding_topping:
+        name: "Nombre"
+        popularity: "Ranking"
+        code: "Código"
+        image: "Foto"
+

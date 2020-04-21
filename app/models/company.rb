@@ -17,6 +17,7 @@ end
 #  image_updated_at   :datetime
 #  name               :string
 #  popularity         :integer          default(0)
+#  priority           :integer          default(0)
 #  created_at         :datetime         not null
 #  updated_at         :datetime         not null
 #
