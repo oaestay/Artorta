@@ -31,7 +31,6 @@ ActiveAdmin.register Cake do
 
     def update
       params[:cake].delete(:virtual_tag_list_attr)
-      binding.pry
       params[:cake][:tag_list] = params[:cake][:tag_list].split(',').map { |tag| normalize_string(tag) }
       params[:cake][:tag_list] += params[:cake][:code].split.map { |tag| normalize_string(tag) }
       params[:cake][:tag_list] += params[:cake][:name].split.map { |tag| normalize_string(tag) }
