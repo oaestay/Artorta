@@ -1,7 +1,7 @@
 ActiveAdmin.register Category do
-  permit_params :id, :name, :slug, :category_id, :subcategories, :realm
+  permit_params :id, :name, :slug, :category_id, :priority, :active, :subcategories_input, :realm
 
-   controller do
+  controller do
     include RealmBehaviour
     include TagBehaviour
 
@@ -11,21 +11,13 @@ ActiveAdmin.register Category do
 
     def create
       params[:category].delete(:virtual_subcategories_input_attr)
-      params[:category][:slug] = normalize_string(params[:category][:name])
-      subcategories = params[:category].delete(:subcategories_input).split
-      params[:category][:subcategories] = subcategories.map do |subcategory|
-        [normalize_string(subcategory), subcategory]
-      end.to_h
+      permitted_params[:category][:slug] = normalize_string(params[:category][:name])
       create!
     end
 
     def update
       params[:category].delete(:virtual_subcategories_input_attr)
       params[:category][:slug] = normalize_string(params[:category][:name])
-      subcategories = params[:category].delete(:subcategories_input).split
-      params[:category][:subcategories] = subcategories.map do |subcategory|
-        [normalize_string(subcategory), subcategory]
-      end.to_h
       update!
     end
   end

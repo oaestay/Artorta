@@ -1,4 +1,6 @@
 class Category < ApplicationRecord
+  include TagBehaviour
+
   serialize :subcategories, Hash
 
   enum realm: [:decorated, :traditional]
@@ -10,7 +12,14 @@ class Category < ApplicationRecord
   scope :active, -> { where(active: true) }
 
   def subcategories_input
-    subcategories.values
+    subcategories.values.join(',')
+  end
+
+  def subcategories_input=(values)
+    _subcategories = values.split(",")
+    self.subcategories = _subcategories.map do |subcategory|
+      [normalize_string(subcategory), subcategory]
+    end.to_h
   end
 end
 
