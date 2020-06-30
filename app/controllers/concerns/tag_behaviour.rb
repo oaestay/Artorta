@@ -4,7 +4,7 @@ module TagBehaviour
   extend ActiveSupport::Concern
 
   def normalize_string(a)
-    I18n.transliterate(a).gsub(/[^0-9A-Za-z_ ]/, '').underscore.strip
+    I18n.transliterate(a).gsub(/[^0-9A-Za-z_ ]/, '').strip.parameterize(separator: '_')
   end
 
   def remove_stopwords(tag_list)
