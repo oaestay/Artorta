@@ -34,7 +34,7 @@ class CakesController < ApplicationController
       @title = @category.subcategories[@subcategory.to_sym]
     end
 
-    if @category.slug == "novios"
+    if @category.slug == "tortas_de_novios"
      @cakes = @cakes.order(code: :asc, popularity: :desc, created_at: :desc)
     else
       @cakes = @cakes.order(popularity: :desc, created_at: :desc)

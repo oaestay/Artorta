@@ -14,7 +14,7 @@
     <% @category.subcategories.each do |key, value| %>
       <%= link_to value, cakes_url(category: @category.slug, subcategory: key), class: 'btn btn--mini' %>
     <% end %>
-    <% if @category.slug == "novios" %>
+    <% if @category.slug == "tortas_de_novios" %>
       <%= link_to "Cupulas", wedding_toppings_url, class: 'btn btn--mini btn--highlight' %>
     <% end %>
   </div>
