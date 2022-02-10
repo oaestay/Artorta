@@ -20,7 +20,7 @@
     "eslint-plugin-jsx-a11y": "^1.2.2",
     "eslint-plugin-react": "^5.1.1",
     "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "vue-eslint-parser": "^6.0.3",
     "webpack-cli": "^3.3.4",
     "webpack-dev-server": "^3.10.3"
