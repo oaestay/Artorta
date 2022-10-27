@@ -90,6 +90,8 @@ ActiveAdmin.register Cake do
       f.input :description
       f.input :image
       f.input :tag_list, as: :tags, label: 'Tags'
+      f.input :includes_couple
+      f.input :minimum_portions
       f.input :realm, as: :hidden, input_html: { value: current_realm }
     end
 
